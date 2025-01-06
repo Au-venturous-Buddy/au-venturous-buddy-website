@@ -33,29 +33,7 @@ exports.createPages = async({graphql, actions}) => {
     `)
     
     result.data.allMarkdownRemark.edges.forEach(({node}) => {
-          /*if(node.frontmatter.format === "wordpress-v2022_2") {
-            createPage({
-                path: node.fields.slug,
-                component: path.resolve(`./src/templates/wordpress-v2022_2/src/index.js`),
-                context: {
-                  // Data passed to context is available
-                  // in page queries as GraphQL variables.
-                  pagePath: node.fields.slug,
-                }
-            })
-          }
-          else if(node.frontmatter.format === "caption-slideshow-v2022_1") {
-            createPage({
-                path: node.fields.slug,
-                component: path.resolve('./src/templates/caption-slideshow-v2022_1/src/index.js'),
-                context: {
-                  // Data passed to context is available
-                  // in page queries as GraphQL variables.
-                  pagePath: node.fields.slug,
-                }
-            })
-          }
-          else */if(node.frontmatter.format === "grid-gallery") {
+          if(node.frontmatter.format === "grid-gallery") {
             createPage({
                 path: node.fields.slug,
                 component: path.resolve('./src/templates/grid-gallery/src/index.js'),
@@ -66,7 +44,7 @@ exports.createPages = async({graphql, actions}) => {
                 }
             })
           }
-          else if(node.frontmatter.format === "comic-strip-v2022_1") {
+          /*else if(node.frontmatter.format === "comic-strip-v2022_1") {
             createPage({
                 path: node.fields.slug,
                 component: path.resolve('./src/templates/comic-strip-v2022_1/src/index.js'),
@@ -76,7 +54,7 @@ exports.createPages = async({graphql, actions}) => {
                   pagePath: node.fields.slug,
                 }
             })
-          }
+          }*/
           else if(node.frontmatter.format === "quiz-v2022_1") {
             createPage({
                 path: node.fields.slug,
