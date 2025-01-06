@@ -193,7 +193,7 @@ export default function Characters() {
     charactersSearch.push({display: personalProfile, contents: [personalInfo.frontmatter.name, personalInfo.internal.content]})
   }
 
-  var charactersCurrentVersion = characterGroups[currentVersion];
+  //var charactersCurrentVersion = characterGroups[currentVersion];
 
   return(
     <Layout menuBarItems={[(<MenuWindow pageID={null} />)/*, (<SelectVersionButton currentVersion={currentVersion} characterItems={characterGroups} changeVersion={changeVersion} />), (<SearchBox />)*/]} showMenuBar={true}>
