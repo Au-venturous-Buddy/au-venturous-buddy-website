@@ -41,9 +41,9 @@ export default function Credits() {
   )
 
   return (
-    <Layout useCustomBackground={(currentSet === "SSDT") ? "wall-background" : null} menuBarItems={[(<MenuWindow pageID="credits" />), (<SearchBox />), (switchButton)]} showMenuBar={true}>
+    <Layout useCustomBackground={(currentSet === "SSDT") ? "wall-background" : null} menuBarItems={[(<MenuWindow pageID={null} />), (<SearchBox />), (switchButton)]} showMenuBar={true}>
     <SEO title="Credits" description="Meet The People Behind Zene 'N Zeanne" />
-    <div className={(currentSet === "ZNZN") ? "table-background" : "vr-background"}>
+    <div className={(currentSet === "ZNZN") ? "table-background" : "vr-background"}>{/*
     <section className="py-3 m-3 home-credits-page">
       <section className="credits-photo-border" style={{margin: `0 auto`, padding: `1.45rem 1.0875rem`, maxWidth: 430}}>
         <div className="credits-photo-main">
@@ -168,7 +168,7 @@ export default function Credits() {
           {`© ${new Date().getFullYear()} ${data.site.siteMetadata.author}`}
         </section>
       </section>
-    </section>
+    </section>*/}
     </div>
     </Layout>
   )
