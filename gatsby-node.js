@@ -33,7 +33,7 @@ exports.createPages = async({graphql, actions}) => {
     `)
     
     result.data.allMarkdownRemark.edges.forEach(({node}) => {
-          if(node.frontmatter.format === "wordpress-v2022_2") {
+          /*if(node.frontmatter.format === "wordpress-v2022_2") {
             createPage({
                 path: node.fields.slug,
                 component: path.resolve(`./src/templates/wordpress-v2022_2/src/index.js`),
@@ -55,7 +55,7 @@ exports.createPages = async({graphql, actions}) => {
                 }
             })
           }
-          else if(node.frontmatter.format === "grid-gallery") {
+          else */if(node.frontmatter.format === "grid-gallery") {
             createPage({
                 path: node.fields.slug,
                 component: path.resolve('./src/templates/grid-gallery/src/index.js'),

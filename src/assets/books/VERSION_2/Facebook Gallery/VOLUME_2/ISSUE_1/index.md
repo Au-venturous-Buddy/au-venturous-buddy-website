@@ -8,9 +8,5 @@ issue: 1
 category: "Facebook Gallery"
 format: "caption-slideshow-v2022_1"
 synopsis: "Get to know the favorite intramurals sports of Zene, Zeanne, and their friends!"
-url: ""
-modes: [
-    {mode_name: "Original", call_at: [0, 1, 2, 3, 4, 5, 6]},
-    {mode_name: "With Deleted Scenes", call_at: [0, 1, 2, 3, 4, 5, 6, 7, 8]}
-]
+url: "https://au-venturous-buddy.github.io/ZNZN-V2-MBFB-V2-I1/"
 ---
