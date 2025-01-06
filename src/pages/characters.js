@@ -196,7 +196,7 @@ export default function Characters() {
   var charactersCurrentVersion = characterGroups[currentVersion];
 
   return(
-    <Layout menuBarItems={[(<MenuWindow pageID={null} />), (<SelectVersionButton currentVersion={currentVersion} characterItems={characterGroups} changeVersion={changeVersion} />), (<SearchBox />)]} showMenuBar={true}>
+    <Layout menuBarItems={[(<MenuWindow pageID={null} />)/*, (<SelectVersionButton currentVersion={currentVersion} characterItems={characterGroups} changeVersion={changeVersion} />), (<SearchBox />)*/]} showMenuBar={true}>
     <SEO title="Characters" description="Characters - Meet the Characters of Zene 'N Zeanne" />
     <section className="py-3" style={{textAlign: "center"}}>
       <div className="table-background">{/*
