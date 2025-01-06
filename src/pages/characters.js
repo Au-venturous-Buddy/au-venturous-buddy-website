@@ -108,7 +108,7 @@ function CharacterProfile({info, profilePic, photo}) {
     </>
     )
 }
-
+/*
 function SelectVersionButton(props) {
   const [show, setShow] = useState(false);
 
@@ -155,12 +155,12 @@ function SelectVersionButton(props) {
     </Modal>
     </>
   )
-}
+}*/
 
 export default function Characters() {
-  const [currentVersion, setCurrentVersion] = useState(4);
+  //const [currentVersion, setCurrentVersion] = useState(4);
 
-  const changeVersion = (version) => setCurrentVersion(version)
+  //const changeVersion = (version) => setCurrentVersion(version)
 
   const characterInfo = GetCharacterInfo();
   const characterProfilePics = GetCharacterProfiles();
@@ -199,7 +199,7 @@ export default function Characters() {
     <Layout menuBarItems={[(<MenuWindow pageID="characters" />), (<SelectVersionButton currentVersion={currentVersion} characterItems={characterGroups} changeVersion={changeVersion} />), (<SearchBox />)]} showMenuBar={true}>
     <SEO title="Characters" description="Characters - Meet the Characters of Zene 'N Zeanne" />
     <section className="py-3" style={{textAlign: "center"}}>
-      <div className="table-background">
+      <div className="table-background">{/*
         <section className={`py-3 m-3 character-profiles-main-version-${currentVersion}`}>
           <Accordion className="mb-3" flush>
             {
@@ -219,7 +219,7 @@ export default function Characters() {
               ))
             }
           </Accordion>
-        </section>
+        </section>*/}
       </div>
     </section>
     </Layout>

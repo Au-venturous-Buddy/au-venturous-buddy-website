@@ -107,11 +107,11 @@ export default function MenuWindow({ pageID }) {
           "text": "Home",
           "to": "/"
         },
-        "characters": {
+        /*"characters": {
           "logo": (<GiPerson />),
           "text": "Characters",
           "to": "/characters/"
-        },
+        },*/
         "books": {
           "logo": (<FaBook />),
           "text": "Read",
@@ -127,11 +127,11 @@ export default function MenuWindow({ pageID }) {
           "text": "Bonus",
           "to": "/bonus/"
         },
-        "credits": {
+        /*"credits": {
           "logo": (<AiOutlineAlignCenter />),
           "text": "Credits",
           "to": "/credits/"
-        }
+        }*/
       }
     
       return(

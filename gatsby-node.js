@@ -44,17 +44,6 @@ exports.createPages = async({graphql, actions}) => {
                 }
             })
           }
-          /*else if(node.frontmatter.format === "comic-strip-v2022_1") {
-            createPage({
-                path: node.fields.slug,
-                component: path.resolve('./src/templates/comic-strip-v2022_1/src/index.js'),
-                context: {
-                  // Data passed to context is available
-                  // in page queries as GraphQL variables.
-                  pagePath: node.fields.slug,
-                }
-            })
-          }*/
           else if(node.frontmatter.format === "quiz-v2022_1") {
             createPage({
                 path: node.fields.slug,
