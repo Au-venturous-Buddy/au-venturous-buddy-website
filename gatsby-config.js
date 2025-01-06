@@ -6,11 +6,11 @@
 
 module.exports = {
   siteMetadata: {
-    title: `Zene 'N Zeanne`,
-    domain: `/zene-n-zeanne-public`,
-    author: `AU-venturous Buddy`
+    title: `Au-venturous Buddy`,
+    domain: `/au-venturous-buddy-website`,
+    author: `Au-venturous Buddy`
   },
-  pathPrefix: "/zene-n-zeanne-public",
+  pathPrefix: "/au-venturous-buddy-website",
   plugins: [
     {
       resolve: `gatsby-source-filesystem`,
@@ -48,15 +48,15 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Zene N Zeanne`,
-        short_name: `ZNZ`,
+        name: `Au-venturous Buddy`,
+        short_name: `AUVB`,
         start_url: `/`,
-        background_color: `#017BFF`,
-        theme_color: `#017BFF`,
+        background_color: `#00F`,
+        theme_color: `#00F`,
         // Enables "Add to Homescreen" prompt and disables browser UI (including back button)
         // see https://developers.google.com/web/fundamentals/web-app-manifest/#display
         display: `standalone`,
-        icon: `src/images/Zene N Zeanne V4 Logo Small.png`, // This path is relative to the root of the site.
+        icon: `src/images/AUVB Logo.png`, // This path is relative to the root of the site.
       },
     },
     `gatsby-plugin-offline`,
