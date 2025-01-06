@@ -50,19 +50,6 @@ export default function Home() {
           <li><GiVrHeadset aria-hidden={true} /> Usage of Virtual/Mixed/Augmented Reality Technologies</li>
         </ul>
       </section>
-      <section
-        style={{
-          margin: `0 auto`,
-          marginTop: `50px`, 
-          marginBottom: `90px`,
-          maxWidth: 460,
-          padding: `1.45rem 1.0875rem`,
-        }}
-      >
-        <div style={{ margin: 0 }}>
-          <StaticImage src="../images/AUventurous Buddy Logo.png" alt="AU-venturous Buddy Logo" layout="fullWidth"></StaticImage>
-        </div>
-      </section>
     </section>
     </div>
     </Layout>
