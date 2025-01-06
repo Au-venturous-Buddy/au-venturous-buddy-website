@@ -126,8 +126,8 @@ export default function MenuWindow({ pageID }) {
           "logo": (<AiFillHeart />),
           "text": "Bonus",
           "to": "/bonus/"
-        },
-        /*"credits": {
+        }/*,
+        "credits": {
           "logo": (<AiOutlineAlignCenter />),
           "text": "Credits",
           "to": "/credits/"
