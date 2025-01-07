@@ -107,15 +107,15 @@ export default function MenuWindow({ pageID }) {
           "text": "Home",
           "to": "/"
         },
-        "books": {
-          "logo": (<FaBook />),
-          "text": "Read",
-          "to": "/books/"
-        },
         "videos": {
           "logo": (<ImFilm />),
           "text": "Watch",
           "to": "/videos/"
+        },
+        "books": {
+          "logo": (<FaBook />),
+          "text": "Read",
+          "to": "/books/"
         },
         "bonus": {
           "logo": (<AiFillHeart />),

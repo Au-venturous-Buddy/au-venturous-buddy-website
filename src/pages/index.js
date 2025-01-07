@@ -36,7 +36,7 @@ export default function Home() {
         <p style={{textAlign: `center`}}>
           Sporty Sam: Dream Team is now joining forces with Zene 'N Zeanne to promote a culture of acceptance and love for everyone, even for all persons with disabilities of all kinds.
         </p>
-      </section>
+      </section>{/*
       <section className="py-3" style={{textAlign: `center`}}>
         <div className="mb-3">
           <ResponsiveHeader level={2} maxSize={1.5} minScreenSize={800}>Zene 'n Zeanne aims to help you learn:</ResponsiveHeader>
@@ -49,7 +49,7 @@ export default function Home() {
           <li><FaCommentMedical aria-hidden={true} /> Healthcare Reforms</li>
           <li><GiVrHeadset aria-hidden={true} /> Usage of Virtual/Mixed/Augmented Reality Technologies</li>
         </ul>
-      </section>
+      </section>*/}
     </section>
     </div>
     </Layout>
