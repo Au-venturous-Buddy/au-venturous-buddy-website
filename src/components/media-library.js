@@ -16,7 +16,7 @@ const helpTooltip = (message, props) => (
   </Tooltip>
 );
 
-function VersionSelector({version, stateChangeFunction, closeFunction}) {
+/*function VersionSelector({version, stateChangeFunction, closeFunction}) {
   const changeState = () => {
     stateChangeFunction(version)
     closeFunction()
@@ -75,14 +75,14 @@ function SelectVersionButton(props) {
     </Modal>
     </>
   )
-}
+}*/
   
 export default function MediaLibrary(props) {
-  const [currentVersion, setCurrentVersion] = useState(props.defaultVersion);
+  //const [currentVersion, setCurrentVersion] = useState(props.defaultVersion);
 
-  const changeVersion = (version) => setCurrentVersion(version)
+  //const changeVersion = (version) => setCurrentVersion(version)
   
-  var mediaCurrentVersion = props.mediaItems[currentVersion];
+  var mediaCurrentVersion = props.mediaItems;//[currentVersion];
   
   var mediaCategoriesItems = [];
   for(var i = 0; i < props.mediaCategories.allFile.edges.length; i++) {
@@ -106,7 +106,7 @@ export default function MediaLibrary(props) {
   }
   
   return(
-    <Layout useCustomBackground={['bonus', 'books', 'videos'].includes(props.pageID) ? "wall-background" : null} menuBarItems={[(<MenuWindow pageID={props.pageID} />), (<SelectVersionButton currentVersion={currentVersion} mediaItems={props.mediaItems} changeVersion={changeVersion} />), (<SearchBox />)]} showMenuBar={true}>
+    <Layout useCustomBackground={['bonus', 'books', 'videos'].includes(props.pageID) ? "wall-background" : null} menuBarItems={[(<MenuWindow pageID={props.pageID} />), /*(<SelectVersionButton currentVersion={currentVersion} mediaItems={props.mediaItems} changeVersion={changeVersion} />), (<SearchBox />)*/]} showMenuBar={true}>
     <SEO title={props.title} description={props.description} />
       <section className="py-3 justify-content-center" style={{textAlign: "center"}}>
         <div className="my-3 py-3 media-shelf">

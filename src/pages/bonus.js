@@ -17,7 +17,7 @@ export default function Bonus() {
     var bonusItemData = bonusData.allFile.edges[i].node.childMarkdownRemark;
     var bonusItemCover = bonusCovers.allFile.edges[i].node;
 
-    var version = bonusItemData.frontmatter.version;
+    //var version = bonusItemData.frontmatter.version;
     var category = bonusItemData.frontmatter.category;
     var wave = bonusItemData.frontmatter.wave;
 
@@ -34,20 +34,20 @@ export default function Bonus() {
       </div>
     )
 
-    if(!(version in bonus)) {
+    /*if(!(version in bonus)) {
       bonus[version] = {}
+    }*/
+    if(!(category in bonus)) {
+      bonus[category] = []
     }
-    if(!(category in bonus[version])) {
-      bonus[version][category] = []
-    }
-    if(!(wave in bonus[version][category])) {
-      bonus[version][category][wave] = []
+    if(!(wave in bonus[category])) {
+      bonus[category][wave] = []
     }
 
-    bonus[version][category][wave].push(displayBonusItemCover)
+    bonus[category][wave].push(displayBonusItemCover)
   }
 
   return(
-    <MediaLibrary pageID="bonus" title="Bonus" description="Zene 'N Zeanne Bonus Content" gridListClassName="bonus-list" gridListTileClassName="mt-2" buttonClassName="bonus-preview" mediaItems={bonus} mediaCategories={bonusCategories} defaultVersion={4} mediaSubCategoryName={"Wave"} />
+    <MediaLibrary pageID="bonus" title="Bonus" description="Au-venturous Buddy Bonus Content" gridListClassName="bonus-list" gridListTileClassName="mt-2" buttonClassName="bonus-preview" mediaItems={bonus} mediaCategories={bonusCategories} mediaSubCategoryName={"Wave"} />
   )
 }

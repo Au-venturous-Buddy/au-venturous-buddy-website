@@ -15,7 +15,7 @@ export default function Videos() {
     var videoData = videosData.allFile.edges[i].node.childMarkdownRemark;
     var videoCover = videosCovers.allFile.edges[i].node;
 
-    var version = videoData.frontmatter.version;
+    //var version = videoData.frontmatter.version;
     var category = videoData.frontmatter.category;
     var season = videoData.frontmatter.season;
 
@@ -32,20 +32,20 @@ export default function Videos() {
       </div>
     )
 
-    if(!(version in videos)) {
+    /*if(!(version in videos)) {
       videos[version] = {}
+    }*/
+    if(!(category in videos)) {
+      videos[category] = []
     }
-    if(!(category in videos[version])) {
-      videos[version][category] = []
-    }
-    if(!(season in videos[version][category])) {
-      videos[version][category][season] = []
+    if(!(season in videos[category])) {
+      videos[category][season] = []
     }
 
-    videos[version][category][season].push(displayVideoCover)
+    videos[category][season].push(displayVideoCover)
   }
 
   return(
-    <MediaLibrary pageID="videos" title="Videos" description="Watch Zene 'N Zeanne Videos" gridListClassName="videos-list" gridListTileClassName="mt-2" buttonClassName="videos-preview" mediaItems={videos} mediaCategories={videosCategories} defaultVersion={2} mediaSubCategoryName={"Season"} />
+    <MediaLibrary pageID="videos" title="Videos" description="Watch Au-venturous Buddy Videos" gridListClassName="videos-list" gridListTileClassName="mt-2" buttonClassName="videos-preview" mediaItems={videos} mediaCategories={videosCategories} mediaSubCategoryName={"Season"} />
   )
 }

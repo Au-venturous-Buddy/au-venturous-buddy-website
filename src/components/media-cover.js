@@ -48,7 +48,7 @@ export default function MediaCover({categoryName, title, cover, synopsis, slug, 
         </Modal.Header>
         <Modal.Body className={(!(['buddies-next-door', 'read-along'].includes(categoryName))) ? "px-0" : "p-0"} style={{textAlign: "justify", color: "#017BFF"}}>
           <div className={(!(['buddies-next-door', 'read-along', 'the-dream-begins'].includes(categoryName))) ? "table-background" : (['the-dream-begins'].includes(categoryName) ? "vr-background-sam p-3" : "tv-background")}>
-          <div className={`p-3 m-3 media-preview-main-${categoryName}`}>
+          <div className={`p-3 m-3 media-preview-main media-preview-main-${categoryName}`}>
           <section>
             <div className="my-3">
               <ResponsiveHeader level={2}>{title}</ResponsiveHeader>

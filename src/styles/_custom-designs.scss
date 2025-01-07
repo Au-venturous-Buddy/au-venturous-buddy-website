@@ -69,77 +69,74 @@
 }
   
 .books-list {
-    li .btn.books-preview-social-snapshots,
-    li .btn.books-preview-au-some-blogs,
-    li .btn.books-preview-facebook-gallery,
-    li .btn.books-preview-wordpress-posts,
-    li .btn.books-preview-social-snapshots:hover,
-    li .btn.books-preview-au-some-blogs:hover,
-    li .btn.books-preview-facebook-gallery:hover,
-    li .btn.books-preview-wordpress-posts:hover,
-    li .btn.books-preview-social-snapshots:focus,
-    li .btn.books-preview-au-some-blogs:focus,
-    li .btn.books-preview-facebook-gallery:focus,
-    li .btn.books-preview-wordpress-posts:hover {
-      background: rgb(97, 46, 1);
-      border: 5px solid rgb(122, 58, 0);
-      background-size: cover;
-      background-position: center;
-      color: white;
-      margin-left: 20px;
-      margin-right: 20px;
+  li .btn.books-preview,
+  li .btn.books-preview:hover,
+  li .btn.books-preview:focus {
+    background: rgb(97, 46, 1);
+    border: 5px solid rgb(122, 58, 0);
+    background-size: cover;
+    background-position: center;
+    color: white;
+    margin-left: 20px;
+    margin-right: 20px;
+    height: 100%;
+    line-height: 100%;
+    padding-top: 0%;
+    padding-bottom: 0%;
+    border-radius: 0px;
+
+    .category-button-contents {
+      padding: 10%;
+      margin-left: 10px;
+      border-left: 5px solid rgb(122, 58, 0);
       height: 100%;
-      line-height: 100%;
-      padding-top: 0%;
-      padding-bottom: 0%;
-      border-radius: 0px;
-  
-      .category-button-contents {
-        padding: 10%;
-        margin-left: 10px;
-        border-left: 5px solid rgb(122, 58, 0);
-        height: 100%;
-  
-        .category-img {
-          border: 5px solid rgb(230, 230, 230);
-        }
+
+      .category-img {
+        border: 5px solid rgb(230, 230, 230);
       }
     }
+  }
   
-    li .btn.books-preview-the-dream-begins,
-    li .btn.books-preview-the-dream-begins:hover,
-    li .btn.books-preview-the-dream-begins:focus {
-      background: black;
-      background-size: cover;
-      background-position: center;
-      border-top-left-radius: 0;
-      border-bottom-left-radius: 0;
-      border-top-right-radius: 5px;
-      border-bottom-right-radius: 5px;
-      margin-left: 20px;
-      margin-right: 20px;
-      height: 100%;
-      line-height: 100%;
-      padding-left: 5px;
-  
-      .category-button-contents {
-        background: rgb(134, 26, 245);
-        margin: 5px;
-        padding: 5px;
-        border-radius: 5px;
-        box-shadow: $shadowImg;
-        border-top: 20px solid red;
-  
-        .category-caption {
-          color: white;
-        }
+  li .btn.books-preview-the-dream-begins,
+  li .btn.books-preview-the-dream-begins:hover,
+  li .btn.books-preview-the-dream-begins:focus {
+    background: black;
+    background-size: cover;
+    background-position: center;
+    border: 0px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    margin-left: 20px;
+    margin-right: 20px;
+    height: 100%;
+    line-height: 100%;
+    padding-left: 5px;
+
+    .category-button-contents {
+      background: rgb(134, 26, 245);
+      margin: 5px;
+      padding: 5px;
+      border-radius: 5px;
+      box-shadow: $shadowImg;
+      border-top: 20px solid red;
+      border-left: 0px;
+
+      .category-caption {
+        color: white;
+      }
+
+      .category-img {
+        border: 0px;
       }
     }
-  
-    li .btn:hover,
-    li .btn:focus { 
-      box-shadow: $shadowCenter;
-    }
+  }
+
+  li .btn:hover,
+  li .btn:focus { 
+    box-shadow: $shadowCenter;
+  }
 }
   
 .videos-list {
@@ -215,11 +212,47 @@
       box-shadow: $shadowCenter;
     }
 }
+
+.all-titles-main,
+.media-preview-main {
+  font-family: "Felt Tip Roman Bold", "Felt Tip Roman Regular", "Futura", "Segoe UI", Arial, Helvetica, sans-serif;
+  background: url("../images/WhitePaperBackground.png"), white;
+  background-size: 90%;
+  background-position: center;
+  box-shadow: $shadowCenter;
+  border-left: 20px dotted gray;
+  min-height: 8.26in;
+
+  .accordion-item {
+    background: rgba(0, 0, 0, 0);
+  }
+
+  .accordion-button {
+    background-color: $primaryColor;
+    color: white;
+    display: block;
+  }
+
+  .accordion-button::after {
+    display: none;
+  }
+
+  .accordion-header {
+    background: rgba(0, 0, 0, 0);
+  }
+
+  .media-preview-main-img,
+  .media-preview-main-img:hover,
+  .media-preview-main-img:focus {
+    border: 5px solid rgb(221, 221, 221);
+    box-shadow: $shadowImg;
+  }
+}
   
-.character-profiles-main-version-4,
-.character-info-main-version-4,
 .all-titles-main-au-some-blogs,
 .media-preview-main-au-some-blogs,
+.all-titles-main-social-snapshots,
+.media-preview-main-social-snapshots,
 .home-credits-page {
     font-family: "Chalkduster", "Futura", "Segoe UI", Arial, Helvetica, sans-serif;
     color: blue;
@@ -251,7 +284,10 @@
   
     .media-preview-main-img-au-some-blogs,
     .media-preview-main-img-au-some-blogs:hover,
-    .media-preview-main-img-au-some-blogs:focus {
+    .media-preview-main-img-au-some-blogs:focus,
+    .media-preview-main-img-social-snapshots,
+    .media-preview-main-img-social-snapshots:hover,
+    .media-preview-main-img-social-snapshots:focus {
       border: 0px;
       box-shadow: none;
     }
@@ -280,7 +316,8 @@
     }
 }
   
-.media-preview-au-some-blogs .media-preview-image {
+.media-preview-au-some-blogs .media-preview-image,
+.media-preview-social-snapshots .media-preview-image {
     border: 0px;
     box-shadow: none;
 }
@@ -366,151 +403,26 @@
   }
 }
 
-.media-preview-au-some-blogs .media-preview-image {
-  border: 0px;
-  box-shadow: none;
-}
-
-.character-profiles-main-version-2,
-.character-info-main-version-2,
-.all-titles-main-social-snapshots,
-.media-preview-main-social-snapshots,
-.all-titles-main-facebook-gallery,
-.media-preview-main-facebook-gallery,
-.all-titles-main-wordpress-posts,
-.media-preview-main-wordpress-posts,
 .all-titles-main-quizzes,
 .media-preview-main-quizzes,
 .all-titles-main-sticker-packs,
 .media-preview-main-sticker-packs {
-  font-family: "Felt Tip Roman Bold", "Felt Tip Roman Regular", "Futura", "Segoe UI", Arial, Helvetica, sans-serif;
-  background: url("../images/WhitePaperBackground.png"), white;
-  background-size: 90%;
-  background-position: center;
-  box-shadow: $shadowCenter;
-  border-left: 20px dotted gray;
-  min-height: 8.26in;
-
-  .accordion-item {
-    background: rgba(0, 0, 0, 0);
-  }
-
-  .accordion-button {
-    background-color: $primaryColor;
-    color: white;
-    display: block;
-  }
-
-  .accordion-button::after {
-    display: none;
-  }
-
-  .accordion-header {
-    background: rgba(0, 0, 0, 0);
-  }
-
-  .media-preview-main-img-social-snapshots,
-  .media-preview-main-img-social-snapshots:hover,
-  .media-preview-main-img-social-snapshots:focus,
-  .media-preview-main-img-facebook-gallery,
-  .media-preview-main-img-facebook-gallery:hover,
-  .media-preview-main-img-facebook-gallery:focus,
-  .media-preview-main-img-wordpress-posts,
-  .media-preview-main-img-wordpress-posts:hover,
-  .media-preview-main-img-wordpress-posts:focus,
-  .media-preview-main-img-quizzes,
-  .media-preview-main-img-quizzes:hover,
-  .media-preview-main-img-quizzes:focus,
-  .media-preview-main-img-sticker-packs,
-  .media-preview-main-img-sticker-packs:hover,
-  .media-preview-main-img-sticker-packs:focus {
-    border: 5px solid rgb(221, 221, 221);
-    box-shadow: $shadowImg;
-  }
-}
-
-.all-titles-main-quizzes,
-.media-preview-main-quizzes,
-.all-titles-main-sticker-packs,
-.media-preview-main-sticker-packs,
-.all-titles-main-social-snapshots,
-.media-preview-main-social-snapshots {
   font-family: "Futura", "Segoe UI", Arial, Helvetica, sans-serif;
-}
-
-.all-titles-main-quizzes,
-.media-preview-main-quizzes,
-.all-titles-main-sticker-packs,
-.media-preview-main-sticker-packs {
   border-left: 10px dashed black;
 }
 
-.character-profiles {
-  li .profile-button,
-  li .profile-button:hover {
-    border-radius: 0px;
-    margin: 0;
-    background: white;
-    border: 5px solid rgb(221, 221, 221);
-    font-family: "Chalkduster", "Futura", "Segoe UI", Arial, Helvetica, sans-serif;
-    color: blue;
-
-    .profile-button-contents {
-      height: 100%;
-      padding: 5%;
-    }
-
-    .profile-caption {
-      color: $primaryColor;
-    }
-
-    .profile-img {
-      border: 5px solid rgb(221, 221, 221);
-      border-radius: 0px;
-    }
-  }
-
-  li .profile-button:hover,
-  li .profile-button:focus {
-    box-shadow: $shadowImg;
-  }
-}
-
-.character-photo-desc {
-  border: 5px solid rgb(221, 221, 221);
-  background-color: white;
-  margin: 0 auto;
-  max-width: 230px;
-  padding: 1%;
-  border: 5px solid rgb(221, 221, 221);
-  box-shadow: $shadowImg;
-
-  .character-photo {
-    border: 5px solid rgb(221, 221, 221);
-    border-radius: 0px;
-  }
-
-  .character-short-desc {
-    font-family: "Chalkduster", "Futura", "Segoe UI", Arial, Helvetica, sans-serif;
-    color: blue;
-  }
-}
-
-.character-profiles-main-version-1,
-.character-profiles-main-version-2,
-.character-info-main-version-1,
-.character-info-main-version-2,
 .comic-strip-main-caption-slideshow {
   font-family: "Felt Tip Roman Bold", "Felt Tip Roman Regular", "Futura", "Segoe UI", Arial, Helvetica, sans-serif;
 
-  .character-short-desc,
   .profile-caption {
     font-family: "Felt Tip Roman Bold", "Felt Tip Roman Regular", "Futura", "Segoe UI", Arial, Helvetica, sans-serif;
   }
 }
 
 .img-button.media-preview-au-some-blogs,
-.img-button.media-preview-au-some-blogs:hover {
+.img-button.media-preview-au-some-blogs:hover,
+.img-button.media-preview-social-snapshots,
+.img-button.media-preview-social-snapshots:hover {
   .media-preview-title {
     font-family: "Chalkduster", "Futura", "Segoe UI", Arial, Helvetica, sans-serif;
     color: blue;

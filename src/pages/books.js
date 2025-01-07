@@ -16,7 +16,7 @@ export default function Books() {
     var bookData = booksData.allFile.edges[i].node.childMarkdownRemark;
     var bookCover = booksCovers.allFile.edges[i].node;
 
-    var version = bookData.frontmatter.version;
+    //var version = bookData.frontmatter.version;
     var category = bookData.frontmatter.category;
     var volume = bookData.frontmatter.volume;
 
@@ -33,7 +33,7 @@ export default function Books() {
       </div>
     )
 
-    if(!(version in books)) {
+    /*if(!(version in books)) {
       books[version] = {}
     }
     if(!(category in books[version])) {
@@ -43,10 +43,18 @@ export default function Books() {
       books[version][category][volume] = []
     }
 
-    books[version][category][volume].push(displayBookCover)
+    books[version][category][volume].push(displayBookCover)*/
+
+    if(!(category in books)) {
+      books[category] = []
+    }
+    if(!(volume in books[category])) {
+      books[category][volume] = []
+    }
+    books[category][volume].push(displayBookCover)
   }
 
   return(
-    <MediaLibrary pageID="books" title="Books" description="Read Zene 'N Zeanne Books" gridListClassName="books-list" gridListTileClassName="mt-2" buttonClassName="books-preview" mediaItems={books} mediaCategories={booksCategories} defaultVersion={4} mediaSubCategoryName={"Volume"} />
+    <MediaLibrary pageID="books" title="Books" description="Read Au-venturous Buddy Books" gridListClassName="books-list" gridListTileClassName="mt-2" buttonClassName="books-preview" mediaItems={books} mediaCategories={booksCategories} mediaSubCategoryName={"Volume"} />
   )
 }

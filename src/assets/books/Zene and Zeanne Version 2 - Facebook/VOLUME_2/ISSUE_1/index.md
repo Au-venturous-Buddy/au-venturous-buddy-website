@@ -5,7 +5,7 @@ date: "2019-12-11"
 version: 2
 volume: 2
 issue: 1
-category: "Facebook Gallery"
+category: "Zene and Zeanne Version 2 - Facebook"
 format: "caption-slideshow-v2022_1"
 synopsis: "Get to know the favorite intramurals sports of Zene, Zeanne, and their friends!"
 url: "https://au-venturous-buddy.github.io/ZNZN-V2-MBFB-V2-I1/"
