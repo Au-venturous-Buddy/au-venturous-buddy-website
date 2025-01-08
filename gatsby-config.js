@@ -12,6 +12,7 @@ module.exports = {
   },
   pathPrefix: "/au-venturous-buddy-website",
   plugins: [
+    `gatsby-transformer-json`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {

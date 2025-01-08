@@ -6,12 +6,11 @@ import {FaCross, FaInfinity, FaCommentMedical} from "react-icons/fa";
 import {IoIosBasketball} from "react-icons/io"
 import SEO from "../components/seo";
 import ResponsiveHeader from "../components/responsive-header";
-import SearchBox from "../components/search-box";
 import MenuWindow from "../components/menu-window";
 
 export default function Home() {
   return(
-    <Layout menuBarItems={[(<MenuWindow pageID="home" />), (<SearchBox />)]} showMenuBar={true}>
+    <Layout menuBarItems={[(<MenuWindow pageID="home" />)]} showMenuBar={true}>
     <SEO title="Home" description="Welcome to the Zene 'N Zeanne Official Website!" />
     <div className="table-background">
     <section className="py-3 m-3 home-credits-page">

@@ -24,48 +24,47 @@ exports.createPages = async({graphql, actions}) => {
                 slug
               }
               frontmatter {
-                format
+                hierarchy
               }
             }
           }
         }
       }
     `)
-    
+
     result.data.allMarkdownRemark.edges.forEach(({node}) => {
-          if(node.frontmatter.format === "grid-gallery") {
+        if(node.frontmatter.hierarchy === "franchise") {
             createPage({
                 path: node.fields.slug,
-                component: path.resolve('./src/templates/grid-gallery/src/index.js'),
+                component: path.resolve('./src/templates/franchise/src/index.js'),
                 context: {
                   // Data passed to context is available
                   // in page queries as GraphQL variables.
                   pagePath: node.fields.slug,
                 }
             })
-          }
-          else if(node.frontmatter.format === "quiz-v2022_1") {
+        }
+        else if(node.frontmatter.hierarchy === "title") {
             createPage({
                 path: node.fields.slug,
-                component: path.resolve('./src/templates/quiz-v2022_1/src/index.js'),
+                component: path.resolve('./src/templates/title/src/index.js'),
                 context: {
                   // Data passed to context is available
                   // in page queries as GraphQL variables.
                   pagePath: node.fields.slug,
                 }
             })
-          }
-          else if(node.frontmatter.format === "wordpress-video-v2022_1") {
+        }
+        else if(node.frontmatter.hierarchy === "content") {
             createPage({
                 path: node.fields.slug,
-                component: path.resolve('./src/templates/wordpress-video-v2022_1/src/index.js'),
+                component: path.resolve('./src/templates/content/src/index.js'),
                 context: {
                   // Data passed to context is available
                   // in page queries as GraphQL variables.
                   pagePath: node.fields.slug,
                 }
             })
-          }
-        }  
-    )
+        }
+    })
 }

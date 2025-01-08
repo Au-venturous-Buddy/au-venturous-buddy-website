@@ -53,164 +53,144 @@
   border-left: 7px dashed black;
 }
 
-.media-shelf {
-    background: rgb(2, 164, 254);
-    border-top: 7px solid rgb(0, 123, 255);
-    border-bottom: 7px solid rgb(0, 123, 255);
+.franchise-list {
+  background: rgb(2, 164, 254);
+  border-top: 7px solid rgb(0, 123, 255);
+  border-bottom: 7px solid rgb(0, 123, 255);
+
+  li .franchise-types-list {
+    background: rgb(0, 145, 224);
+    border: 7px solid rgb(0, 123, 255);
   }
-  
-.books-list,
-.videos-list,
-.bonus-list {
-    li .media-shelf-design {
-      background: rgb(0, 145, 224);
-      border: 7px solid rgb(0, 123, 255);
-    }
+}
+
+li .btn:hover,
+li .btn:focus { 
+  box-shadow: $shadowCenter;
 }
   
-.books-list {
-  li .btn.books-preview,
-  li .btn.books-preview:hover,
-  li .btn.books-preview:focus {
-    background: rgb(97, 46, 1);
-    border: 5px solid rgb(122, 58, 0);
-    background-size: cover;
-    background-position: center;
-    color: white;
-    margin-left: 20px;
-    margin-right: 20px;
+li .btn.books-preview,
+li .btn.books-preview:hover,
+li .btn.books-preview:focus {
+  background: rgb(97, 46, 1);
+  border: 5px solid rgb(122, 58, 0);
+  background-size: cover;
+  background-position: center;
+  color: white;
+  margin-left: 20px;
+  margin-right: 20px;
+  height: 100%;
+  line-height: 100%;
+  padding-top: 0%;
+  padding-bottom: 0%;
+  border-radius: 0px;
+
+  .books-preview-contents {
+    padding: 10%;
+    margin-left: 10px;
+    border-left: 5px solid rgb(122, 58, 0);
     height: 100%;
-    line-height: 100%;
-    padding-top: 0%;
-    padding-bottom: 0%;
-    border-radius: 0px;
 
-    .category-button-contents {
-      padding: 10%;
-      margin-left: 10px;
-      border-left: 5px solid rgb(122, 58, 0);
-      height: 100%;
-
-      .category-img {
-        border: 5px solid rgb(230, 230, 230);
-      }
+    .books-preview-image {
+      border: 5px solid rgb(230, 230, 230);
     }
-  }
-  
-  li .btn.books-preview-the-dream-begins,
-  li .btn.books-preview-the-dream-begins:hover,
-  li .btn.books-preview-the-dream-begins:focus {
-    background: black;
-    background-size: cover;
-    background-position: center;
-    border: 0px;
-    border-top-left-radius: 0;
-    border-bottom-left-radius: 0;
-    border-top-right-radius: 5px;
-    border-bottom-right-radius: 5px;
-    margin-left: 20px;
-    margin-right: 20px;
-    height: 100%;
-    line-height: 100%;
-    padding-left: 5px;
-
-    .category-button-contents {
-      background: rgb(134, 26, 245);
-      margin: 5px;
-      padding: 5px;
-      border-radius: 5px;
-      box-shadow: $shadowImg;
-      border-top: 20px solid red;
-      border-left: 0px;
-
-      .category-caption {
-        color: white;
-      }
-
-      .category-img {
-        border: 0px;
-      }
-    }
-  }
-
-  li .btn:hover,
-  li .btn:focus { 
-    box-shadow: $shadowCenter;
   }
 }
-  
-.videos-list {
-    li .btn,
-    li .btn:hover,
-    li .btn:focus {
-      background: black;
-      background-size: cover;
-      background-position: center;
-      border-top-left-radius: 0;
-      border-bottom-left-radius: 0;
-      border-top-right-radius: 5px;
-      border-bottom-right-radius: 5px;
-      margin-left: 20px;
-      margin-right: 20px;
-      height: 100%;
-      line-height: 100%;
-      padding-left: 5px;
-  
-      .category-button-contents {
-        background: white;
-        margin: 5px;
-        padding: 5px;
-        border-radius: 5px;
-        box-shadow: $shadowImg;
-        border-top: 20px solid rgb(0, 115, 255);
-  
-        .category-caption {
-          color: $primaryColor;
-        }
-      }
+
+/*li .btn.books-preview-the-dream-begins,
+li .btn.books-preview-the-dream-begins:hover,
+li .btn.books-preview-the-dream-begins:focus {
+  background: black;
+  background-size: cover;
+  background-position: center;
+  border: 0px;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  margin-left: 20px;
+  margin-right: 20px;
+  height: 100%;
+  line-height: 100%;
+  padding-left: 5px;
+
+  .category-button-contents {
+    background: rgb(134, 26, 245);
+    margin: 5px;
+    padding: 5px;
+    border-radius: 5px;
+    box-shadow: $shadowImg;
+    border-top: 20px solid red;
+    border-left: 0px;
+
+    .category-caption {
+      color: white;
     }
-  
-    li .btn:hover,
-    li .btn:focus { 
-      box-shadow: $shadowCenter;
+
+    .category-img {
+      border: 0px;
     }
-}
+  }
+}*/
   
-.bonus-list {
-    li .btn,
-    li .btn:hover,
-    li .btn:focus {
-      background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.3), rgba(135, 135, 135, 0.3)), url("../images/WhitePaperBackground.png"), white;
-      border-left: 7px dashed black;
-      background-size: cover;
-      background-position: center;
-      border-radius: 0;
+li .btn.videos-preview,
+li .btn.videos-preview:hover,
+li .btn.videos-preview:focus {
+  background: black;
+  background-size: cover;
+  background-position: center;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  margin-left: 20px;
+  margin-right: 20px;
+  height: 100%;
+  line-height: 100%;
+  padding-left: 5px;
+
+  .videos-preview-contents {
+    background: white;
+    margin: 5px;
+    padding: 5px;
+    border-radius: 5px;
+    box-shadow: $shadowImg;
+    border-top: 20px solid rgb(0, 115, 255);
+
+    .videos-preview-title {
       color: $primaryColor;
-      margin-left: 20px;
-      margin-right: 20px;
-      height: 100%;
-      line-height: 100%;
-      box-shadow: none;
-      border-radius: 0;
-  
-      .category-button-contents {
-        padding: 5%;
-        height: 100%;
-  
-        .category-caption {
-          color: $primaryColor;
-        }
-  
-        .category-img {
-          box-shadow: $shadowImg;
-        }
-      }
     }
+  }
+}
   
-    li .btn:hover,
-    li .btn:focus {
-      box-shadow: $shadowCenter;
+li .btn.bonus-preview,
+li .btn.bonus-preview:hover,
+li .btn.bonus-preview:focus {
+  background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.3), rgba(135, 135, 135, 0.3)), url("../images/WhitePaperBackground.png"), white;
+  border-left: 7px dashed black;
+  background-size: cover;
+  background-position: center;
+  border-radius: 0;
+  color: $primaryColor;
+  margin-left: 20px;
+  margin-right: 20px;
+  height: 100%;
+  line-height: 100%;
+  box-shadow: none;
+  border-radius: 0;
+
+  .bonus-preview-contents {
+    padding: 5%;
+    height: 100%;
+
+    .bonus-preview-title {
+      color: $primaryColor;
     }
+
+    .bonus-preview-image {
+      box-shadow: $shadowImg;
+    }
+  }
 }
 
 .all-titles-main,
