@@ -102,22 +102,6 @@ main, .modal {
   text-align: center;
 }
 
-/*
-h1, h2, h3, h4, h5, h6, b, strong, .badge, .btn, .bold-text, .navbar-toggler {
-  font-family: "Verdana Bold TTF", "Verdana Bold", "Segoe UI", Arial, Helvetica, sans-serif;
-  i, em, .italic-text {
-    font-family: "Verdana Bold Italic", "Segoe UI", Arial, Helvetica, sans-serif;
-  }
-}
-
-i, em, .italic-text {
-  font-family: "Verdana Italic", "Segoe UI", Arial, Helvetica, sans-serif;
-  h1, h2, h3, h4, h5, h6, b, strong, .badge, .btn, .bold-text, .navbar-toggler {
-    font-family: "Verdana Bold Italic", "Segoe UI", Arial, Helvetica, sans-serif;
-  }
-}
-*/
-
 h1, h2, h3, h4, h5, h6 {
   text-align: center;
 }
@@ -271,7 +255,6 @@ h1, h2, h3, h4, h5, h6 {
 
 .modal-content {
   box-shadow: $shadowCenter;
-  //background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.8), rgba(229, 229, 229, 0.8), rgba(219, 219, 219, 0.8));
 }
 
 ul, ol {
@@ -335,50 +318,6 @@ ul.bullet-points li {
   justify-content: center;
 }
 
-.comic-strip-page {
-  border: 5px solid rgb(230, 230, 230);
-  box-shadow: $shadowImg;
-}
-
-.comic-strip-main,
-.comic-strip-main-caption-slideshow,
-.img-button.comic-strip-page-thumbnail {
-  border-left: 20px dotted gray;
-  background-color: white;
-  background-image: url("../images/WhitePaperBackground.png");
-  background-size: 90%;
-  background-position: center;
-}
-
-.comic-strip-main,
-.comic-strip-main-caption-slideshow,
-.img-button.comic-strip-page-thumbnail:hover,
-.img-button.comic-strip-page-thumbnail:focus {
-  box-shadow: $shadowCenter;
-}
-
-.img-button.comic-strip-page-thumbnail,
-.img-button.comic-strip-page-thumbnail:hover,
-.img-button.comic-strip-page-thumbnail:focus {
-  border-left: 10px dotted gray;
-
-  .comic-strip-page {
-    cursor: pointer;
-  }
-
-  .comic-strip-page-number {
-    text-align: center;
-    color: $primaryColor;
-  }
-}
-
-.img-button.comic-strip-page-thumbnail-current .comic-strip-page-number,
-.high-score-character {
-  background: rgba(255, 255, 0, 0.5);
-  border-left: 5px solid #CDCD00;
-  border-right: 5px solid #CDCD00;
-}
-
 .modal-header,
 .modal-body,
 .modal-footer {
@@ -400,4 +339,108 @@ ul.bullet-points li {
 
 .offcanvas-backdrop {
   background-color: rgba(0, 0, 0, 0);
+}
+
+.franchise-list {
+  background: rgb(2, 164, 254);
+  border-top: 7px solid rgb(0, 123, 255);
+  border-bottom: 7px solid rgb(0, 123, 255);
+
+  li .franchise-types-list {
+    background: rgb(0, 145, 224);
+    border: 7px solid rgb(0, 123, 255);
+  }
+}
+
+li .btn:hover,
+li .btn:focus { 
+  box-shadow: $shadowCenter;
+}
+  
+li .btn.books-preview,
+li .btn.books-preview:hover,
+li .btn.books-preview:focus {
+  background: rgb(97, 46, 1);
+  border: 5px solid rgb(122, 58, 0);
+  background-size: cover;
+  background-position: center;
+  color: white;
+  margin-left: 20px;
+  margin-right: 20px;
+  height: 100%;
+  line-height: 100%;
+  padding-top: 0%;
+  padding-bottom: 0%;
+  border-radius: 0px;
+
+  .books-preview-contents {
+    padding: 10%;
+    margin-left: 10px;
+    border-left: 5px solid rgb(122, 58, 0);
+    height: 100%;
+
+    .books-preview-image {
+      border: 5px solid rgb(230, 230, 230);
+    }
+  }
+}
+
+li .btn.videos-preview,
+li .btn.videos-preview:hover,
+li .btn.videos-preview:focus {
+  background: black;
+  background-size: cover;
+  background-position: center;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  margin-left: 20px;
+  margin-right: 20px;
+  height: 100%;
+  line-height: 100%;
+  padding-left: 5px;
+
+  .videos-preview-contents {
+    background: white;
+    margin: 5px;
+    padding: 5px;
+    border-radius: 5px;
+    box-shadow: $shadowImg;
+    border-top: 20px solid rgb(0, 115, 255);
+
+    .videos-preview-title {
+      color: $primaryColor;
+    }
+  }
+}
+  
+li .btn.bonus-preview,
+li .btn.bonus-preview:hover,
+li .btn.bonus-preview:focus {
+  background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.3), rgba(135, 135, 135, 0.3)), url("../images/WhitePaperBackground.png"), white;
+  border-left: 7px dashed black;
+  background-size: cover;
+  background-position: center;
+  border-radius: 0;
+  color: $primaryColor;
+  margin-left: 20px;
+  margin-right: 20px;
+  height: 100%;
+  line-height: 100%;
+  box-shadow: none;
+  border-radius: 0;
+
+  .bonus-preview-contents {
+    padding: 5%;
+    height: 100%;
+
+    .bonus-preview-title {
+      color: $primaryColor;
+    }
+
+    .bonus-preview-image {
+      box-shadow: $shadowImg;
+    }
+  }
 }

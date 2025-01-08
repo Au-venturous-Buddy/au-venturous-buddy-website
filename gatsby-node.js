@@ -55,16 +55,5 @@ exports.createPages = async({graphql, actions}) => {
                 }
             })
         }
-        else if(node.frontmatter.hierarchy === "content") {
-            createPage({
-                path: node.fields.slug,
-                component: path.resolve('./src/templates/content/src/index.js'),
-                context: {
-                  // Data passed to context is available
-                  // in page queries as GraphQL variables.
-                  pagePath: node.fields.slug,
-                }
-            })
-        }
     })
 }
