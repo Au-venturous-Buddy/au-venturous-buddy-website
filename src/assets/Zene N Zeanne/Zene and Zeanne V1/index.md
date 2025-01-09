@@ -1,5 +1,5 @@
 ---
 hierarchy: "title"
-name: "Zene and Zeanne 1"
+name: "Zene and Zeanne V1"
 type: "books"
 ---

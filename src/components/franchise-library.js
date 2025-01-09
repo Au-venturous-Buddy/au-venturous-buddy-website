@@ -8,7 +8,7 @@ import Slider from "react-slick";
 
 function TitlePreviewButton(props) {
   return(
-    <Button aria-label={props.titleName} className={`m-2 view img-button ${props.titleType}-preview ${props.titleType}-preview-${props.titleCode}`} onClick={props.titleSlug}>
+    <Button aria-label={props.titleName} className={`m-2 view img-button ${props.titleType}-preview ${props.titleType}-preview-${props.titleCode}`} href={props.titleSlug}>
       <div class={`${props.titleType}-preview-contents`} aria-hidden={true}>
         <img
           className={`d-block w-100 ${props.titleType}-preview-image`}
@@ -35,7 +35,7 @@ export default function FranchiseLibrary(props) {
 
     franchiseTitlesRender[franchiseTitle["type"]].push(
       <div>
-        <TitlePreviewButton titleCode={value.toLowerCase().replace(" ", "-")} titleName={franchiseTitle["name"]} titleType={franchiseTitle["type"]} titleSlug={franchiseTitle["slug"]} titleCover={franchiseTitle["cover"]} />
+        <TitlePreviewButton titleCode={value.toLowerCase().replaceAll(" ", "-")} titleName={franchiseTitle["name"]} titleType={franchiseTitle["type"]} titleSlug={franchiseTitle["slug"]} titleCover={franchiseTitle["cover"]} />
       </div>
     )
   })

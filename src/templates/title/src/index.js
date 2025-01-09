@@ -33,23 +33,25 @@ export default function TitleTemplate(props) {
         contents[contentGroup][contentItem]["url"] = nodeItem.childMarkdownRemark.frontmatter.url
       }
     }
-    else if(nodeItem.ext === ".png" && nodeItem.name === "CONTENT_COVER") {
-      var contentGroup = nodeItem.relativeDirectory.split("/")[nodeItem.relativeDirectory.split("/").length - 2]
-      if(!(contentGroup in contents)) {
-        contents[contentGroup] = {}
-      }
+    else if(nodeItem.ext === ".png") {
+      if(nodeItem.name === "CONTENT_COVER") {
+        var contentGroup = nodeItem.relativeDirectory.split("/")[nodeItem.relativeDirectory.split("/").length - 2]
+        if(!(contentGroup in contents)) {
+          contents[contentGroup] = {}
+        }
 
-      var contentItem = nodeItem.relativeDirectory.split("/")[nodeItem.relativeDirectory.split("/").length - 1]
-      if(!(contentItem in contents[contentGroup])) {
-        contents[contentGroup][contentItem] = {}
-      }
+        var contentItem = nodeItem.relativeDirectory.split("/")[nodeItem.relativeDirectory.split("/").length - 1]
+        if(!(contentItem in contents[contentGroup])) {
+          contents[contentGroup][contentItem] = {}
+        }
 
-      contents[contentGroup][contentItem]["cover"] = nodeItem.publicURL
+        contents[contentGroup][contentItem]["cover"] = nodeItem.publicURL
+      }
     }
   }
 
   return(
-    <TitleLibrary pageID="explore" type={titleType} titleCode={titleCode.toLowerCase().replace(" ", "-")} title={titleName} description={titleName} contents={contents} />
+    <TitleLibrary pageID="explore" type={titleType} titleCode={titleCode.toLowerCase().replaceAll(" ", "-")} title={titleName} description={titleName} contents={contents} />
   )
 }
 

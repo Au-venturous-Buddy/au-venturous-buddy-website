@@ -341,7 +341,10 @@ ul.bullet-points li {
   background-color: rgba(0, 0, 0, 0);
 }
 
-.franchise-list {
+.home-credits-page,
+.franchise-list,
+.books-title-main,
+.books-content-main {
   background: rgb(2, 164, 254);
   border-top: 7px solid rgb(0, 123, 255);
   border-bottom: 7px solid rgb(0, 123, 255);
@@ -357,9 +360,9 @@ li .btn:focus {
   box-shadow: $shadowCenter;
 }
   
-li .btn.books-preview,
-li .btn.books-preview:hover,
-li .btn.books-preview:focus {
+.btn.books-preview,
+.btn.books-preview:hover,
+.btn.books-preview:focus {
   background: rgb(97, 46, 1);
   border: 5px solid rgb(122, 58, 0);
   background-size: cover;
@@ -385,9 +388,9 @@ li .btn.books-preview:focus {
   }
 }
 
-li .btn.videos-preview,
-li .btn.videos-preview:hover,
-li .btn.videos-preview:focus {
+.btn.videos-preview,
+.btn.videos-preview:hover,
+.btn.videos-preview:focus {
   background: black;
   background-size: cover;
   background-position: center;
@@ -415,9 +418,9 @@ li .btn.videos-preview:focus {
   }
 }
   
-li .btn.bonus-preview,
-li .btn.bonus-preview:hover,
-li .btn.bonus-preview:focus {
+.btn.bonus-preview,
+.btn.bonus-preview:hover,
+.btn.bonus-preview:focus {
   background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.3), rgba(135, 135, 135, 0.3)), url("../images/WhitePaperBackground.png"), white;
   border-left: 7px dashed black;
   background-size: cover;
@@ -442,5 +445,50 @@ li .btn.bonus-preview:focus {
     .bonus-preview-image {
       box-shadow: $shadowImg;
     }
+  }
+}
+
+.books-title-main-body,
+.books-content-main-body {
+  font-family: "Felt Tip Roman Bold", "Felt Tip Roman Regular", "Futura", "Segoe UI", Arial, Helvetica, sans-serif;
+  background: url("../images/WhitePaperBackground.png"), white;
+  background-size: 90%;
+  background-position: center;
+  box-shadow: $shadowCenter;
+  border-left: 20px dotted gray;
+  min-height: 8.26in;
+
+  .accordion-item {
+    background: rgba(0, 0, 0, 0);
+  }
+
+  .accordion-button {
+    background-color: $primaryColor;
+    color: white;
+    display: block;
+  }
+
+  .accordion-button::after {
+    display: none;
+  }
+
+  .accordion-header {
+    background: rgba(0, 0, 0, 0);
+  }
+
+  .books-content-preview-image,
+  .books-content-preview-image:hover,
+  .books-content-preview-image:focus {
+    border: 5px solid rgb(221, 221, 221);
+    box-shadow: $shadowImg;
+  }
+
+  .books-content-preview-title,
+  .books-title-main-body-name {
+    color: $primaryColor;
+  }
+
+  .books-content-preview-caption {
+    text-align: justify;
   }
 }

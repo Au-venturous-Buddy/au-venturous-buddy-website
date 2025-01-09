@@ -1,28 +1,6 @@
-.ausome-blogs,
-.ausome-blogs-v2 {
-  font-family: "Chalkduster", "Futura", "Segoe UI", Arial, Helvetica, sans-serif;
-  color: #00f;
-  background-color: rgb(255, 234, 183);
-  background-image: url("../images/Au-Some\ Blogs\ Background.png");
-  background-size: 90%;
-  background-position: center;
-  border-left: 20px dotted gray;
-  margin: 5%;
-  box-shadow: $shadowCenter;
-
-  .ext-web-link,
-  .ext-web-link:visited {
-    color: #00f;
-  }
-
-  .ext-web-link:hover {
-    color: #fff;
-  }
-}
-
-li .btn.books-preview-the-dream-begins,
-li .btn.books-preview-the-dream-begins:hover,
-li .btn.books-preview-the-dream-begins:focus {
+.btn.books-preview-sporty-sam-dream-team-the-dream-begins,
+.btn.books-preview-sporty-sam-dream-team-the-dream-begins:hover,
+.btn.books-preview-sporty-sam-dream-team-the-dream-begins:focus {
   background: black;
   background-size: cover;
   background-position: center;
@@ -55,11 +33,15 @@ li .btn.books-preview-the-dream-begins:focus {
     }
   }
 }
-
-.all-titles-main,
-.media-preview-main {
-  font-family: "Felt Tip Roman Bold", "Felt Tip Roman Regular", "Futura", "Segoe UI", Arial, Helvetica, sans-serif;
-  background: url("../images/WhitePaperBackground.png"), white;
+  
+.home-credits-page-body,
+.books-title-main-body-zene-n-zeanne-au-some-blogs,
+.books-content-main-body-zene-n-zeanne-au-some-blogs,
+.books-title-main-body-zene-n-zeanne-social-snapshots,
+.books-content-main-body-zene-n-zeanne-social-snapshots {
+  font-family: "Chalkduster", "Futura", "Segoe UI", Arial, Helvetica, sans-serif;
+  color: blue;
+  background: url("../images/Au-Some\ Blogs\ Background.png"), rgb(255, 234, 183);
   background-size: 90%;
   background-position: center;
   box-shadow: $shadowCenter;
@@ -72,6 +54,7 @@ li .btn.books-preview-the-dream-begins:focus {
 
   .accordion-button {
     background-color: $primaryColor;
+    background: url("../images/BlueCrayonBackground.png");
     color: white;
     display: block;
   }
@@ -84,89 +67,43 @@ li .btn.books-preview-the-dream-begins:focus {
     background: rgba(0, 0, 0, 0);
   }
 
-  .media-preview-main-img,
-  .media-preview-main-img:hover,
-  .media-preview-main-img:focus {
-    border: 5px solid rgb(221, 221, 221);
-    box-shadow: $shadowImg;
-  }
-}
-  
-.all-titles-main-au-some-blogs,
-.media-preview-main-au-some-blogs,
-.all-titles-main-social-snapshots,
-.media-preview-main-social-snapshots,
-.home-credits-page {
-    font-family: "Chalkduster", "Futura", "Segoe UI", Arial, Helvetica, sans-serif;
-    color: blue;
-    background: url("../images/Au-Some\ Blogs\ Background.png"), rgb(255, 234, 183);
-    background-size: 90%;
-    background-position: center;
-    box-shadow: $shadowCenter;
-    border-left: 20px dotted gray;
-    min-height: 8.26in;
-  
-    .accordion-item {
-      background: rgba(0, 0, 0, 0);
-    }
-  
-    .accordion-button {
-      background-color: $primaryColor;
-      background: url("../images/BlueCrayonBackground.png");
-      color: white;
-      display: block;
-    }
-  
-    .accordion-button::after {
-      display: none;
-    }
-  
-    .accordion-header {
-      background: rgba(0, 0, 0, 0);
-    }
-  
-    .media-preview-main-img-au-some-blogs,
-    .media-preview-main-img-au-some-blogs:hover,
-    .media-preview-main-img-au-some-blogs:focus,
-    .media-preview-main-img-social-snapshots,
-    .media-preview-main-img-social-snapshots:hover,
-    .media-preview-main-img-social-snapshots:focus {
-      border: 0px;
-      box-shadow: none;
-    }
-  
-    .ext-web-link,
-    .ext-web-link:hover {
-      color: blue;
-    }
-  
-    .ext-web-link:hover {
-      background: rgba(0, 205, 0, 0.5);
-      border-left: 5px solid rgba(0, 139, 0, 0.7);
-      border-right: 5px solid rgba(0, 139, 0, 0.7);
-      box-shadow: none;
-      border-radius: 0px;
-    }
-
-    .credits-photo-border {
-      border: 5px solid rgb(221, 221, 221); 
-      background-color: white;
-
-      .credits-photo-main {
-        border: 5px solid rgb(221, 221, 221); 
-        background-color: white;
-      }
-    }
-}
-  
-.media-preview-au-some-blogs .media-preview-image,
-.media-preview-social-snapshots .media-preview-image {
+  .books-content-preview-image,
+  .books-content-preview-image:hover,
+  .books-content-preview-image:focus {
     border: 0px;
     box-shadow: none;
+  }
+
+  .hero,
+  .books-content-preview-title,
+  .books-title-main-body-name {
+    color: #00f;
+  }
+
+  .ext-web-link,
+  .ext-web-link:hover {
+    color: blue;
+  }
+
+  .ext-web-link:hover {
+    background: rgba(0, 205, 0, 0.5);
+    border-left: 5px solid rgba(0, 139, 0, 0.7);
+    border-right: 5px solid rgba(0, 139, 0, 0.7);
+    box-shadow: none;
+    border-radius: 0px;
+  }
 }
 
-.all-titles-main-the-dream-begins,
-.media-preview-main-the-dream-begins {
+.books-title-main-sporty-sam-dream-team-the-dream-begins,
+.books-content-main-sporty-sam-dream-team-the-dream-begins {
+  background: #454545;
+  border-top: 20px solid gray;
+  border-bottom: 20px solid gray;
+  box-shadow: $shadowCenter;
+}
+
+.books-title-main-body-sporty-sam-dream-team-the-dream-begins,
+.books-content-main-body-sporty-sam-dream-team-the-dream-begins {
   font-family: "Krungthep", "Futura", "Segoe UI", Arial, Helvetica, sans-serif;
   color: rgba(51, 228, 255, 0.8);
   background: url("../images/SportySamVisorBackgroundSam.png"), #8518f6;
@@ -178,10 +115,16 @@ li .btn.books-preview-the-dream-begins:focus {
   height: 5in;
   overflow-y: scroll;
 
-  .media-preview-main-img-the-dream-begins,
+  .books-content-preview-image,
+  .books-content-preview-image:hover,
   .qr-code {
     border: 7px solid rgba(51, 228, 255, 0.8);
     border-radius: 10px;
+  }
+
+  .books-content-preview-title,
+  .books-title-main-body-name {
+    color: rgba(51, 228, 255, 0.8);
   }
 
   .accordion-item {
@@ -190,7 +133,6 @@ li .btn.books-preview-the-dream-begins:focus {
 
   .accordion-button {
     background-color: rgba(51, 228, 255, 0.8);
-    //background: url("../images/BlueCrayonBackground.png");
     color: white;
     display: block;
   }
@@ -203,46 +145,8 @@ li .btn.books-preview-the-dream-begins:focus {
     background: rgba(0, 0, 0, 0);
   }
 
-  .media-preview-the-dream-begins {
-    border: 0px;
-    box-shadow: none;
-    background-color: rgba(0, 0, 0, 0);
-
-    .media-preview-image {
-      border: 7px solid rgba(51, 228, 255, 0.8);
-      border-radius: 10px;
-    }
-
-    .media-preview-title {
-      color: rgba(51, 228, 255, 0.8);
-    }
-
-    .media-preview-badge {
-      background-color: rgba(51, 228, 255, 0.8) !important;
-      color: white;
-    }
-  }
-
-  .media-preview-the-dream-begins:hover,
-  .media-preview-the-dream-begins:focus {
-    border: 0px;
-    box-shadow: none;
-    background-color: rgba(51, 228, 255, 0.8);
-    border-radius: 10px;
-
-    .media-preview-image {
-      border: 7px solid rgba(51, 228, 255, 0);
-      border-radius: 10px;
-    }
-
-    .media-preview-title {
-      color: white;
-    }
-
-    .media-preview-badge {
-      background-color: white !important;
-      color: rgba(51, 228, 255, 0.8) !important;
-    }
+  .badge {
+    background-color: rgba(51, 228, 255, 0.8) !important;
   }
 }
 
@@ -260,38 +164,6 @@ li .btn.books-preview-the-dream-begins:focus {
   .profile-caption {
     font-family: "Felt Tip Roman Bold", "Felt Tip Roman Regular", "Futura", "Segoe UI", Arial, Helvetica, sans-serif;
   }
-}
-
-.img-button.media-preview-au-some-blogs,
-.img-button.media-preview-au-some-blogs:hover,
-.img-button.media-preview-social-snapshots,
-.img-button.media-preview-social-snapshots:hover {
-  .media-preview-title {
-    font-family: "Chalkduster", "Futura", "Segoe UI", Arial, Helvetica, sans-serif;
-    color: blue;
-  }
-}
-
-.table-background,
-.table-background-zene {
-  border-top: 10px solid rgb(0, 123, 255);
-  border-bottom: 10px solid rgb(0, 123, 255);
-  background: rgb(2, 164, 254);
-  box-shadow: $shadowCenter;
-}
-
-.table-background-zeanne {
-  border-top: 10px solid #9542ff;
-  border-bottom: 10px solid #9542ff;
-  background: #a25aff;
-  box-shadow: $shadowCenter;
-}
-
-.table-background-classroom-table {
-  border-top: 10px solid #feb956;
-  border-bottom: 10px solid #feb956;
-  background: #feb956;
-  box-shadow: $shadowCenter;
 }
 
 .tv-background {

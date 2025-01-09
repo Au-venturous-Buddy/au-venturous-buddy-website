@@ -110,7 +110,7 @@ export default function MenuWindow({ pageID }) {
         "explore": {
           "logo": (<ImFilm />),
           "text": "Explore",
-          "to": "/videos/"
+          "to": "/explore/"
         }
       }
     
