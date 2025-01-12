@@ -75,13 +75,13 @@ function MenuWindowMain({menuItems, pageID}) {
         </OverlayTrigger>
         <Modal size="md" show={show} onHide={handleClose} centered scrollable>
           <Modal.Header className="justify-content-center">
-            <Modal.Title style={{textAlign: "center", color: "#017BFF"}}>
-              <div style={{color: "#017BFF"}}>
+            <Modal.Title style={{textAlign: "center"}}>
+              <div>
                 <ResponsiveHeader level={1}>Menu</ResponsiveHeader>
               </div>
             </Modal.Title>
           </Modal.Header>
-          <Modal.Body style={{textAlign: "justify", color: "#017BFF"}}>
+          <Modal.Body style={{textAlign: "justify"}}>
             <section>
               <ImageList rowHeight="auto" gap={5} cols={ResponsiveGridColumns(3, menuLinks.length, [860, 560])}>
                 {menuLinks.map((value, index) => (
