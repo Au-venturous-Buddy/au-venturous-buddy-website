@@ -36,7 +36,7 @@ export default function Explore() {
                             {
                                 franchises.map((franchise) => (
                                     <ImageListItem>
-                                        <Button aria-label={franchise["name"]} className={`m-2 view img-button franchise-cover`} href={franchise["slug"]}>
+                                        <Button aria-label={franchise["name"]} className={`m-2 view img-button franchise-cover`} href={"/au-venturous-buddy-website" + franchise["slug"]}>
                                             <img
                                                 className={`d-block w-100`}
                                                 src={franchise["cover"]}

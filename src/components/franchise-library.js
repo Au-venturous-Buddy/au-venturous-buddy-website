@@ -8,7 +8,7 @@ import Slider from "react-slick";
 
 function TitlePreviewButton(props) {
   return(
-    <Button aria-label={props.titleName} className={`m-2 view img-button ${props.titleType}-preview ${props.titleType}-preview-${props.titleCode}`} href={props.titleSlug}>
+    <Button aria-label={props.titleName} className={`m-2 view img-button ${props.titleType}-preview ${props.titleType}-preview-${props.titleCode}`} href={"/au-venturous-buddy-website" + props.titleSlug}>
       <div class={`${props.titleType}-preview-contents`} aria-hidden={true}>
         <img
           className={`d-block w-100 ${props.titleType}-preview-image`}
