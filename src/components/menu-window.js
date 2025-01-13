@@ -7,9 +7,6 @@ import {ImageList, ImageListItem} from '@mui/material';
 import ResponsiveGridColumns from "../hooks/responsive-grid-columns";
 import { IoHome } from "react-icons/io5";
 import { ImFilm } from "react-icons/im";
-import {FaBook} from "react-icons/fa";
-import { GiPerson } from "react-icons/gi";
-import {AiOutlineAlignCenter, AiFillHeart} from "react-icons/ai"
 import ResponsiveSize from "../hooks/responsive-size";
 import { useStaticQuery, graphql } from "gatsby"
 
@@ -68,7 +65,7 @@ function MenuWindowMain({menuItems, pageID}) {
         <Button style={{fontSize: ResponsiveSize(0.8, "rem", 0.001, 500)}} aria-label={"Menu" + ((!(pageID === null)) ? (" - " + menuItems[pageID]["text"]) : "")} onClick={handleShow}>
           {
             (pageID) ?
-            (<span aria-hidden>{menuItems[pageID]['logo']} {menuItems[pageID]['text']}</span>) :
+            (<span aria-hidden><GiHamburgerMenu />{menuItems[pageID]['logo']} {menuItems[pageID]['text']}</span>) :
             (<span aria-hidden><GiHamburgerMenu /> Menu</span>)
           }
         </Button>
