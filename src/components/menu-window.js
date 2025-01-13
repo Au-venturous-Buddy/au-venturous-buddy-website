@@ -65,7 +65,7 @@ function MenuWindowMain({menuItems, pageID}) {
         <Button style={{fontSize: ResponsiveSize(0.8, "rem", 0.001, 500)}} aria-label={"Menu" + ((!(pageID === null)) ? (" - " + menuItems[pageID]["text"]) : "")} onClick={handleShow}>
           {
             (pageID) ?
-            (<span aria-hidden><GiHamburgerMenu />{menuItems[pageID]['logo']} {menuItems[pageID]['text']}</span>) :
+            (<span aria-hidden><GiHamburgerMenu /> {menuItems[pageID]['logo']} {menuItems[pageID]['text']}</span>) :
             (<span aria-hidden><GiHamburgerMenu /> Menu</span>)
           }
         </Button>

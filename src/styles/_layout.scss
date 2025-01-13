@@ -86,7 +86,7 @@ article a:hover {
 }
 
 body {
-  font-family: "Gill Sans Medium", "Segoe UI", Arial, Helvetica, sans-serif;
+  font-family: "Gill Sans Bold", "Segoe UI", Arial, Helvetica, sans-serif;
   color: #fff;
   background-size: 20%;
 
@@ -450,7 +450,7 @@ li .btn:focus {
 
 .books-title-main-body,
 .books-content-main-body {
-  font-family: "Felt Tip Roman Bold", "Felt Tip Roman Regular", "Gill Sans Medium", "Segoe UI", Arial, Helvetica, sans-serif;
+  font-family: "Felt Tip Roman Bold", "Felt Tip Roman Regular", "Gill Sans Bold", "Segoe UI", Arial, Helvetica, sans-serif;
   background: url("../images/WhitePaperBackground.png"), white;
   background-size: 90%;
   background-position: center;
@@ -489,6 +489,40 @@ li .btn:focus {
   }
 
   .books-content-preview-caption {
+    text-align: justify;
+  }
+}
+
+.videos-title-main-body,
+.videos-content-main-body {
+  border: 20px solid rgb(188, 188, 188);
+  border-radius: 5px;
+  box-shadow: $shadowCenter;
+  background-image: url("../images/Zene\ N\ Zeanne\ Background.png");
+  background-size: cover;
+  color: white;
+  height: 10in;
+  overflow-y: scroll;
+
+  .accordion-item {
+    background: rgba(0, 0, 0, 0);
+  }
+
+  .accordion-button {
+    background-color: $primaryColor;
+    color: white;
+    display: block;
+  }
+
+  .accordion-button::after {
+    display: none;
+  }
+
+  .accordion-header {
+    background: rgba(0, 0, 0, 0);
+  }
+
+  .videos-content-preview-caption {
     text-align: justify;
   }
 }
