@@ -4,6 +4,7 @@ import ResponsiveHeader from "./responsive-header"
 import Layout from "./layout"
 import SEO from "./seo";
 import MenuWindow from "./menu-window";
+import UpFolderButton from "./up-folder-button";
 import Slider from "react-slick";
 
 function TitlePreviewButton(props) {
@@ -50,7 +51,7 @@ export default function FranchiseLibrary(props) {
   };
   
   return(
-    <Layout useCustomBackground="wall-background" menuBarItems={[(<MenuWindow pageID={props.pageID} />)]} showMenuBar={true}>
+    <Layout useCustomBackground="wall-background" menuBarItems={[(<UpFolderButton previousFolder="/au-venturous-buddy-website/explore" />), (<MenuWindow pageID={props.pageID} />)]} showMenuBar={true}>
     <SEO title={props.title} description={props.description} />
       <section className="py-3 justify-content-center" style={{textAlign: "center"}}>
         {

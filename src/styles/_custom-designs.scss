@@ -33,7 +33,7 @@
     }
   }
 }
-  
+
 .home-credits-page-body,
 .books-title-main-body-zene-n-zeanne-au-some-blogs,
 .books-content-main-body-zene-n-zeanne-au-some-blogs,
@@ -91,6 +91,10 @@
     border-right: 5px solid rgba(0, 139, 0, 0.7);
     box-shadow: none;
     border-radius: 0px;
+  }
+
+  .badge {
+    background-color: #A35BFF !important;
   }
 }
 
@@ -220,7 +224,6 @@
 
   ol,
   .comic-strip-main,
-  .home-credits-page,
   iframe {
     font-family: "Krungthep", "Gill Sans Bold", "Segoe UI", Arial, Helvetica, sans-serif;
     color: rgba(51, 228, 255, 0.8);

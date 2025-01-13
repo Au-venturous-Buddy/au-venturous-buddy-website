@@ -6,6 +6,7 @@ import SEO from "./seo";
 import MenuWindow from "./menu-window";
 import BackButton from "./back-button";
 import {QRCodeSVG} from 'qrcode.react';
+import UpFolderButton from "./up-folder-button";
 
 function ContentPreviewButton(props) {
   const [show, setShow] = useState(false);
@@ -94,7 +95,7 @@ export default function TitleLibrary(props) {
   };
   
   return(
-    <Layout useCustomBackground="wall-background" menuBarItems={[(<MenuWindow pageID={props.pageID} />)]} showMenuBar={true}>
+    <Layout useCustomBackground="wall-background" menuBarItems={[(<UpFolderButton previousFolder={`/au-venturous-buddy-website${props.franchiseSlug}`} />), (<MenuWindow pageID={props.pageID} />)]} showMenuBar={true}>
     <SEO title={props.title} description={props.description} />
       <div className={`py-3 justify-content-center ${props.type}-title-main ${props.type}-title-main-${props.titleCode}`} style={{textAlign: "center"}}>
         <section className={`m-3 p-2 ${props.type}-title-main-body ${props.type}-title-main-body-${props.titleCode}`}>

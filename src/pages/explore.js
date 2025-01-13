@@ -24,8 +24,8 @@ export default function Explore() {
     return(
         <Layout menuBarItems={[(<MenuWindow pageID="home" />)]} showMenuBar={true}>
             <SEO title="Explore" description="Explore Au-venturous Buddy Media Content" />
-            <div className="home-credits-page">
-                <section className="py-3 m-3 home-credits-page-body">
+            <div className="explore-page">
+                <section className="py-3 m-3 explore-page-body">
                     <section className="py-3 hero">
                         <div style={{textAlign: `center`, margin: 0}}>
                             <ResponsiveHeader level={1} maxSize={2} minScreenSize={800}>

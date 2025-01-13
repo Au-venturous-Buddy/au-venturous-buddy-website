@@ -6,6 +6,7 @@ export default function TitleTemplate(props) {
   var titleName = null
   var titleType = null
   var titleCode = null
+  var franchiseSlug = null
   var contents = {}
 
   for(var i = 0; i < props.data.allFile.edges.length; i++) {
@@ -16,6 +17,8 @@ export default function TitleTemplate(props) {
         titleName = nodeItem.childMarkdownRemark.frontmatter.name
         titleType = nodeItem.childMarkdownRemark.frontmatter.type
         titleCode = nodeItem.relativeDirectory.split("/")[nodeItem.relativeDirectory.split("/").length - 1]
+        franchiseSlug = nodeItem.childMarkdownRemark.fields.slug.slice(0, nodeItem.childMarkdownRemark.fields.slug.lastIndexOf("/"));
+        franchiseSlug = franchiseSlug.slice(0, franchiseSlug.lastIndexOf("/"))
       }
       else if(nodeItem.childMarkdownRemark.frontmatter.hierarchy === "content") {
         var contentGroup = nodeItem.relativeDirectory.split("/")[nodeItem.relativeDirectory.split("/").length - 2]
@@ -51,7 +54,7 @@ export default function TitleTemplate(props) {
   }
 
   return(
-    <TitleLibrary pageID="explore" type={titleType} titleCode={titleCode.toLowerCase().replaceAll(" ", "-")} title={titleName} description={titleName} contents={contents} />
+    <TitleLibrary pageID="explore" type={titleType} franchiseSlug={franchiseSlug} titleCode={titleCode.toLowerCase().replaceAll(" ", "-")} title={titleName} description={titleName} contents={contents} />
   )
 }
 
