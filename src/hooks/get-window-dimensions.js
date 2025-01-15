@@ -1,29 +1,29 @@
 import { useState, useEffect } from 'react';
 
 // Check if window is defined (so if in the browser or in node.js).
-//const isBrowser = typeof window !== "undefined"
+const isBrowser = typeof window !== "undefined"
 
 function GetWindowDimensions() {
-  //if(isBrowser) {
+  if(isBrowser) {
     const { innerWidth: width, innerHeight: height } = window;
     return {
       width,
       height
     };
-  //}
+  }
   
-  /*else {
+  else {
     const width = 1200;
     const height = 800;
     return {
       width,
       height
     };
-  }*/
+  }
 }
 
 export default function UseWindowDimensions() {
-  //if(isBrowser) {
+  if(isBrowser) {
     const [windowDimensions, setWindowDimensions] = useState(GetWindowDimensions());
 
     useEffect(() => {
@@ -36,13 +36,13 @@ export default function UseWindowDimensions() {
     }, []);
 
     return windowDimensions;
-  //}
-  /*else {
+  }
+  else {
     const width = 1200;
     const height = 800;
     return {
       width,
       height
     };
-  }*/
+  }
 }
