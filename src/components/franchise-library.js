@@ -1,5 +1,5 @@
 import React from "react"
-import { Button } from "react-bootstrap"
+import { Button, Tab, Tabs } from "react-bootstrap"
 import ResponsiveHeader from "./responsive-header"
 import Layout from "./layout"
 import SEO from "./seo";
@@ -9,7 +9,7 @@ import Slider from "react-slick";
 
 function TitlePreviewButton(props) {
   return(
-    <Button aria-label={props.titleName} className={`m-2 view img-button ${props.titleType}-preview ${props.titleType}-preview-${props.titleCode}`} href={"/au-venturous-buddy-website" + props.titleSlug}>
+    <Button aria-label={props.titleName} className={`mx-2 mt-2 view img-button ${props.titleType}-preview ${props.titleType}-preview-${props.titleCode}`} href={"/au-venturous-buddy-website" + props.titleSlug}>
       <div class={`${props.titleType}-preview-contents`} aria-hidden={true}>
         <img
           className={`d-block w-100 ${props.titleType}-preview-image`}
@@ -54,19 +54,25 @@ export default function FranchiseLibrary(props) {
     <Layout useCustomBackground="wall-background" menuBarItems={[(<UpFolderButton previousFolder="/au-venturous-buddy-website/explore" />), (<MenuWindow pageID={props.pageID} />)]} showMenuBar={true}>
     <SEO title={props.title} description={props.description} />
       <section className="py-3 justify-content-center" style={{textAlign: "center"}}>
-        {
-          Object.keys(franchiseTitlesRender).map((value) => (
-            <ul className="franchise-list">
-              <li style={{display: "inline"}}>
-                <div className="px-1 pt-3 m-3 franchise-types-list">
-                  <Slider {...settings}>
-                    {franchiseTitlesRender[value]}
-                  </Slider>
-                </div>
-              </li>
-            </ul>
-          ))
-        }
+        <Tabs fill>
+          {
+            Object.keys(franchiseTitlesRender).map((value) => (
+              <Tab eventKey={value} title={value}>
+                <ul className="franchise-list">
+                  <li style={{display: "inline"}}>
+                    {
+                      franchiseTitlesRender[value].map((item) => (
+                        <div className="px-1 pt-3 m-3 franchise-types-list">
+                          {item}
+                        </div>
+                      ))
+                    }
+                  </li>
+                </ul>
+              </Tab>
+            ))
+          }
+        </Tabs>
       </section>
     </Layout>
   )
