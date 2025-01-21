@@ -14,6 +14,7 @@ export default function Home() {
       <section className="py-3 hero">
         <div style={{textAlign: `center`, margin: 0}}>
           <ResponsiveHeader level={1} maxSize={2} minScreenSize={800}>
+          What's New?
           <div
             style={{
               margin: `0 auto`,
@@ -23,15 +24,11 @@ export default function Home() {
             className="mb-4"
           >
             <div style={{ margin: 0 }}>
-              <StaticImage src="../images/ZNZNxSSDT.png" alt="Zene 'N Zeanne Meets Sporty Sam: Dream Team" layout="fullWidth"></StaticImage>
+              <StaticImage src="../images/AUVBxNACW.png" alt="National Autism Consciousness Week" layout="fullWidth"></StaticImage>
             </div>
           </div>
-          "Au-Some" meets "Dare Dream Big"!
           </ResponsiveHeader>
         </div>
-        <p className="mx-2" style={{textAlign: `center`}}>
-          Sporty Sam: Dream Team is now joining forces with Zene 'N Zeanne to promote a culture of acceptance and love for everyone, even for all persons with disabilities of all kinds.
-        </p>
       </section>
     </section>
     </div>
