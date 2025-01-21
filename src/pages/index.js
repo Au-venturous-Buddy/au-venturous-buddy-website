@@ -24,7 +24,7 @@ export default function Home() {
               className="mb-4"
             >
               <div style={{ margin: 0 }}>
-                <StaticImage src="../images/AUVBxNACW.png" alt="National Autism Consciousness Week" layout="fullWidth"></StaticImage>
+                <StaticImage src="../images/AUVBxNACW.PNG" alt="National Autism Consciousness Week" layout="fullWidth"></StaticImage>
               </div>
             </div>
             </ResponsiveHeader>
