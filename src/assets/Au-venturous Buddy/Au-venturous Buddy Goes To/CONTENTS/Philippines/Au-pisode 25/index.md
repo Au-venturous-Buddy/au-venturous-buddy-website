@@ -1,7 +1,7 @@
 ---
 hierarchy: "content"
 name: "Tagaytay (and a Wedding)"
-date: "2023-07-17"
+date: "2024-12-25"
 url: "https://youtu.be/HwM6LpoecD4"
 ---
 
