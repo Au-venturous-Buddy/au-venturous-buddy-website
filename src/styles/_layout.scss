@@ -261,20 +261,6 @@ ul, ol {
   padding: 0px;
 }
 
-a,
-a:visited {
-  color: $primaryColor;
-  text-decoration: none;
-}
-
-a:hover,
-a:focus {
-  background-color: $primaryColor;
-  color: white;
-  text-decoration: none;
-  border-radius: 25%;
-}
-
 ol.instructions-list li {
   display: list-item;
   list-style-type: decimal;
@@ -542,6 +528,20 @@ li .btn:focus {
 
   .videos-content-preview-caption {
     text-align: justify;
+
+    a,
+    a:visited {
+      color: $primaryColor;
+      text-decoration: none;
+    }
+
+    a:hover,
+    a:focus {
+      background-color: $primaryColor;
+      color: white;
+      text-decoration: none;
+      border-radius: 20pt;
+    }
   }
 }
 
