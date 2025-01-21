@@ -23,7 +23,7 @@ export default function Home() {
               }}
               className="mb-4"
             >
-              <div style={{ margin: 0 }}>
+              <div style={{ margin: 0 }} className="hero-image">
                 <StaticImage src="../images/AUVBxNACW.PNG" alt="National Autism Consciousness Week" layout="fullWidth"></StaticImage>
               </div>
             </div>
@@ -36,13 +36,11 @@ export default function Home() {
               style={{
                 margin: `0 auto`,
                 maxWidth: 860,
-                padding: `1.45rem 1.0875rem`,
-                borderRadius: `50%`,
-                border: `#00F`
+                padding: `1.45rem 1.0875rem`
               }}
               className="mb-4"
             >
-              <div style={{ margin: 0 }}>
+              <div style={{ margin: 0 }} className="kali-profile-image">
                 <StaticImage src="../images/KaliProfile.png" alt="Kali's Profile Picture" layout="fullWidth"></StaticImage>
               </div>
             </div>

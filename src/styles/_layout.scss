@@ -550,6 +550,12 @@ li .btn:focus {
 }
 
 .franchise-cover,
-.franchise-cover:hover {
+.franchise-cover:hover,
+.hero-image {
   border: 5px solid rgb(230, 230, 230);
+}
+
+.kali-profile-image {
+  border-radius: 50%;
+  border: #00F;
 }
