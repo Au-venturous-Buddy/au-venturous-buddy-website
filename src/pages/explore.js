@@ -22,7 +22,7 @@ export default function Explore() {
     }
 
     return(
-        <Layout menuBarItems={[(<MenuWindow pageID="home" />)]} showMenuBar={true}>
+        <Layout menuBarItems={[(<MenuWindow pageID="explore" />)]} showMenuBar={true}>
             <SEO title="Explore" description="Explore Au-venturous Buddy Media Content" />
             <div className="explore-page">
                 <section className="py-3 m-3 explore-page-body">

@@ -6,3 +6,5 @@ url: "https://youtu.be/I7ZeSklcm84"
 ---
 
 Hi AU-venturous Buddies! It's time to explore Beitou Hot Spring and Yangmingshan National Park, both of which showcase the geological activity of the island of Taiwan!
+
+God bless everyone!

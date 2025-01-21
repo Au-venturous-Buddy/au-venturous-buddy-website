@@ -6,3 +6,5 @@ url: "https://youtu.be/e0eXX889cfA"
 ---
 
 For the first-ever episode of AU-venturous Buddy Goes To…, join us as we explore Genting Highlands in Malaysia!
+
+God bless everyone!
