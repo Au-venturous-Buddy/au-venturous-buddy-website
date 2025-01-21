@@ -50,9 +50,7 @@ function ContentPreviewButton(props) {
                   src={props.contentCover}
                   alt={props.contentName}
                 />
-                <div className={`${props.titleType}-content-preview-caption`}>
-                  {props.contentSynopsis}
-                </div>
+                <div className={`${props.titleType}-content-preview-caption`} dangerouslySetInnerHTML={{__html: props.contentSynopsis}}></div>
               </section>
               <section className="m-5" style={{textAlign: "center"}}>
                 <ResponsiveHeader level={3}>Scan, Click, or Tap on the QR Code below to start:</ResponsiveHeader>

@@ -32,7 +32,7 @@ export default function TitleTemplate(props) {
         }
 
         contents[contentGroup][contentItem]["name"] = nodeItem.childMarkdownRemark.frontmatter.name
-        contents[contentGroup][contentItem]["synopsis"] = nodeItem.childMarkdownRemark.frontmatter.synopsis
+        contents[contentGroup][contentItem]["synopsis"] = nodeItem.childMarkdownRemark.html
         contents[contentGroup][contentItem]["url"] = nodeItem.childMarkdownRemark.frontmatter.url
       }
     }
@@ -74,10 +74,10 @@ query($pagePath: String!) {
           frontmatter {
             hierarchy
             name
-            synopsis
             type
             url
           }
+          html
           fields {
             slug
           }
