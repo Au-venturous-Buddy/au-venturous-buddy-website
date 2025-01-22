@@ -67,13 +67,18 @@
 
   .books-content-preview-image,
   .books-content-preview-image:hover,
-  .books-content-preview-image:focus {
+  .books-content-preview-image:focus,
+  .bonus-content-preview-image,
+  .bonus-content-preview-image:hover,
+  .bonus-content-preview-image:focus {
     border: 5px solid rgb(221, 221, 221);
     box-shadow: $shadowImg;
   }
 
   .books-content-preview-title,
-  .books-title-main-body-name {
+  .books-title-main-body-name,
+  .bonus-content-preview-title,
+  .bonus-title-main-body-name {
     color: #017BFF;
   }
 
@@ -124,14 +129,19 @@
 
   .books-content-preview-image,
   .books-content-preview-image:hover,
-  .books-content-preview-image:focus {
+  .books-content-preview-image:focus,
+  .bonus-content-preview-image,
+  .bonus-content-preview-image:hover,
+  .bonus-content-preview-image:focus {
     border: 0px;
     box-shadow: none;
   }
 
   .hero,
   .books-content-preview-title,
-  .books-title-main-body-name {
+  .books-title-main-body-name,
+  .bonus-content-preview-title,
+  .bonus-title-main-body-name {
     color: #00f;
   }
 
