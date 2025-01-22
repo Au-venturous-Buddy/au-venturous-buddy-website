@@ -35,7 +35,7 @@ export default function Home() {
             <div
               style={{
                 margin: `0 auto`,
-                maxWidth: 860,
+                maxWidth: 460,
                 padding: `1.45rem 1.0875rem`
               }}
               className="mb-4"
