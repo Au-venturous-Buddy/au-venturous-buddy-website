@@ -205,6 +205,16 @@
   }
 }
 
+.videos-title-main-body-zene-and-zeanne-v2-read-along,
+.videos-content-main-body-zene-and-zeanne-v2-read-along {
+  background-image: url("../images/Zene\ N\ Zeanne\ Background.png");
+  color: white;
+
+  .videos-content-preview-title {
+    color: white
+  }
+}
+
 .all-titles-main-quizzes,
 .media-preview-main-quizzes,
 .all-titles-main-sticker-packs,
@@ -218,24 +228,5 @@
 
   .profile-caption {
     font-family: "Felt Tip Roman Bold", "Felt Tip Roman Regular", "Gill Sans Bold", "Segoe UI", Arial, Helvetica, sans-serif;
-  }
-}
-
-.tv-background {
-  padding: 3%;
-
-  .all-titles-main-read-along,
-  .all-titles-main-buddies-next-door,
-  .media-preview-main-read-along,
-  .media-preview-main-buddies-next-door,
-  .tv-contents {
-    border: 20px solid rgb(188, 188, 188);
-    border-radius: 5px;
-    box-shadow: $shadowCenter;
-    background-image: url("../images/Zene\ N\ Zeanne\ Background.png");
-    background-size: cover;
-    color: white;
-    height: 5in;
-    overflow-y: scroll;
   }
 }
