@@ -213,6 +213,22 @@
   .videos-content-preview-title {
     color: white
   }
+
+  .videos-content-preview-caption {
+    a,
+    a:visited {
+      color: white;
+      text-decoration: none;
+    }
+
+    a:hover,
+    a:focus {
+      background-color: white;
+      color: $primaryColor;
+      text-decoration: none;
+      border-radius: 20pt;
+    }
+  }
 }
 
 .all-titles-main-quizzes,
