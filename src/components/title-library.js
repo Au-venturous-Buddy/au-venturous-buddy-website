@@ -17,18 +17,20 @@ function ContentPreviewButton(props) {
   return(
     <>
       <Button aria-label={props.contentName} className={`m-2 view img-button ${props.titleType}-content-preview ${props.titleType}-content-preview-${props.titleCode}`} onClick={handleShow}>
-        <div class={`${props.titleType}-content-preview-contents`} aria-hidden={true}>
-          <img
-            className={`d-block w-100 ${props.titleType}-content-preview-image`}
-            src={props.contentCover}
-            alt={props.contentName}
-          />
-          <section className={`m-3 ${props.titleType}-content-preview-title`}>
-            <ResponsiveHeader level={3} maxSize={1} minScreenSize={460}>
-              {props.contentName}
-            </ResponsiveHeader>
-            <Badge>{`${props.contentGroup} ${props.contentItem}`}</Badge>
-          </section>
+        <div style={{maxWidth: "600px"}}>
+          <div class={`${props.titleType}-content-preview-contents`} aria-hidden={true}>
+            <img
+              className={`d-block w-100 ${props.titleType}-content-preview-image`}
+              src={props.contentCover}
+              alt={props.contentName}
+            />
+            <section className={`m-3 ${props.titleType}-content-preview-title`}>
+              <ResponsiveHeader level={3} maxSize={1} minScreenSize={460}>
+                {props.contentName}
+              </ResponsiveHeader>
+              <Badge>{`${props.contentGroup} ${props.contentItem}`}</Badge>
+            </section>
+          </div>
         </div>
       </Button>
       <Modal size="xl" show={show} onHide={handleClose} centered scrollable fullscreen={true}>
