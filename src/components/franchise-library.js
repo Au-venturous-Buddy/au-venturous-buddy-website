@@ -10,17 +10,19 @@ import Slider from "react-slick";
 function TitlePreviewButton(props) {
   return(
     <Button aria-label={props.titleName} className={`mx-2 mt-2 view img-button ${props.titleType}-preview ${props.titleType}-preview-${props.titleCode}`} href={"/au-venturous-buddy-website" + props.titleSlug}>
-      <div class={`${props.titleType}-preview-contents`} aria-hidden={true}>
-        <img
-          className={`d-block w-100 ${props.titleType}-preview-image`}
-          src={props.titleCover}
-          alt={props.titleName}
-        />
-        <section className={`m-3 ${props.titleType}-preview-title`}>
-          <ResponsiveHeader level={3} maxSize={1} minScreenSize={460}>
-            {props.titleName}
-          </ResponsiveHeader>
-        </section>
+      <div style={{maxWidth: "450px"}}>
+        <div class={`${props.titleType}-preview-contents`} aria-hidden={true}>
+          <img
+            className={`d-block w-100 ${props.titleType}-preview-image`}
+            src={props.titleCover}
+            alt={props.titleName}
+          />
+          <section className={`m-3 ${props.titleType}-preview-title`}>
+            <ResponsiveHeader level={3} maxSize={1} minScreenSize={460}>
+              {props.titleName}
+            </ResponsiveHeader>
+          </section>
+        </div>
       </div>
     </Button>
   )
