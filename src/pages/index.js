@@ -22,7 +22,7 @@ export default function Home() {
               className="mb-4"
             >
               <div style={{ margin: 0 }} className="kali-profile-image">
-                <StaticImage src="../images/KaliProfile.png" alt="Kali's Profile Picture" layout="fullWidth"></StaticImage>
+                <StaticImage src="../images/KaliProfileApril2025.png" alt="Kali's Profile Picture" layout="fullWidth"></StaticImage>
               </div>
             </div>
             Inspiring AU-some Buddy, AU-some Dad, AU-some Mom to have an AU-some AU-venture!
