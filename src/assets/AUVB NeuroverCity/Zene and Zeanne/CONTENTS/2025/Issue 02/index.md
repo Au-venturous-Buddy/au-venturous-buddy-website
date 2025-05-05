@@ -1,7 +1,7 @@
 ---
 hierarchy: "content"
 name: "Elections: Easy as an Egg"
-date: "2025-05-07"
+date: "2025-05-05"
 url: "https://au-venturous-buddy.github.io/AUVB-NVCT-BK-2025-I02/"
 ---
 
