@@ -225,6 +225,36 @@
   }
 }
 
+.books-title-main-body-kaintayo,
+.books-content-main-body-kaintayo {
+  font-family: "Gill Sans Medium", "Segoe UI", Arial, Helvetica, sans-serif;
+  color: rgb(33, 211, 39);
+
+  .books-content-preview-title,
+  .books-title-main-body-name {
+    color: rgb(33, 211, 39);
+  }
+
+  .accordion-button {
+    background-color: rgb(33, 211, 39);
+    color: rgb(0, 148, 254);
+    display: block;
+  }
+
+  .accordion-button::after {
+    display: none;
+  }
+
+  .accordion-header {
+    background: rgba(0, 0, 0, 0);
+  }
+
+  .badge {
+    background-color: rgb(33, 211, 39) !important;
+    color: rgb(0, 148, 254) !important;
+  }
+}
+
 .videos-title-main-body-zene-and-zeanne-v2-read-along,
 .videos-content-main-body-zene-and-zeanne-v2-read-along {
   background-image: url("../images/Zene\ N\ Zeanne\ Background.png");
