@@ -1,5 +1,5 @@
 ---
 hierarchy: "title"
 name: "Quizzes"
-type: "quizzes"
+type: "bonus"
 ---
