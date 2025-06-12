@@ -548,6 +548,51 @@ li .btn:focus {
   }
 }
 
+.bonus-title-main-body,
+.bonus-content-main-body {
+  font-family: "Gill Sans Bold", "Segoe UI", Arial, Helvetica, sans-serif;
+  background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.3), rgba(135, 135, 135, 0.3)), url("../images/WhitePaperBackground.png"), white;
+  border-left: 7px dashed black;
+  background-size: 90%;
+  background-position: center;
+  box-shadow: $shadowCenter;
+  min-height: 8.26in;
+
+  .accordion-item {
+    background: rgba(0, 0, 0, 0);
+  }
+
+  .accordion-button {
+    background-color: $primaryColor;
+    color: white;
+    display: block;
+  }
+
+  .accordion-button::after {
+    display: none;
+  }
+
+  .accordion-header {
+    background: rgba(0, 0, 0, 0);
+  }
+
+  .bonus-content-preview-image,
+  .bonus-content-preview-image:hover,
+  .bonus-content-preview-image:focus {
+    border: 5px solid rgb(221, 221, 221);
+    box-shadow: $shadowImg;
+  }
+
+  .bonus-content-preview-title,
+  .bonus-title-main-body-name {
+    color: $primaryColor;
+  }
+
+  .bonus-content-preview-caption {
+    text-align: justify;
+  }
+}
+
 .explore-page {
   color: $primaryColor
 }
