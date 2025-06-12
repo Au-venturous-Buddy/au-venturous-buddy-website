@@ -1,5 +1,5 @@
 ---
 hierarchy: "title"
 name: "Sticker Packs"
-type: "stickers"
+type: "bonus"
 ---
