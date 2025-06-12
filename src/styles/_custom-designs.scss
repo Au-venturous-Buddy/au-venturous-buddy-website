@@ -128,7 +128,13 @@
   .books-content-preview-image:focus,
   .bonus-content-preview-image,
   .bonus-content-preview-image:hover,
-  .bonus-content-preview-image:focus {
+  .bonus-content-preview-image:focus,
+  .quizzes-content-preview-image,
+  .quizzes-content-preview-image:hover,
+  .quizzes-content-preview-image:focus, 
+  .stickers-content-preview-image,
+  .stickers-content-preview-image:hover,
+  .stickers-content-preview-image:focus {
     border: 0px;
     box-shadow: none;
   }
@@ -137,7 +143,11 @@
   .books-content-preview-title,
   .books-title-main-body-name,
   .bonus-content-preview-title,
-  .bonus-title-main-body-name {
+  .bonus-title-main-body-name,
+  .quizzes-content-preview-title,
+  .quizzes-title-main-body-name, 
+  .stickers-content-preview-title,
+  .stickers-title-main-body-name {
     color: #00f;
   }
 
