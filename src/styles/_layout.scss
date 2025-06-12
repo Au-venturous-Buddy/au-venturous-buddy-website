@@ -422,7 +422,13 @@ li .btn:focus {
   
 .btn.bonus-preview,
 .btn.bonus-preview:hover,
-.btn.bonus-preview:focus {
+.btn.bonus-preview:focus,
+.btn.quizzes-preview,
+.btn.quizzes-preview:hover,
+.btn.quizzes-preview:focus,
+.btn.stickers-preview,
+.btn.stickers-preview:hover,
+.btn.stickers-preview:focus {
   background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.3), rgba(135, 135, 135, 0.3)), url("../images/WhitePaperBackground.png"), white;
   border-left: 7px dashed black;
   background-size: cover;
