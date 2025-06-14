@@ -42,3 +42,8 @@
     font-family: "Gill Sans Light";
     src: url("../fonts/Gill\ Sans\ Light.woff2");
 }
+
+@font-face {
+    font-family: "Arial Rounded Bold MT";
+    src: url("../fonts/ArialRoundedBoldMT.woff2");
+}
