@@ -52,12 +52,12 @@ module.exports = {
         name: `Au-venturous Buddy`,
         short_name: `AUVB`,
         start_url: `/`,
-        background_color: `#00F`,
-        theme_color: `#00F`,
+        background_color: `rgb(31, 12, 117)`,
+        theme_color: `rgb(31, 12, 117)`,
         // Enables "Add to Homescreen" prompt and disables browser UI (including back button)
         // see https://developers.google.com/web/fundamentals/web-app-manifest/#display
         display: `standalone`,
-        icon: `src/images/AUVB Logo.png`, // This path is relative to the root of the site.
+        icon: `src/images/AUVB Logo v2.png`, // This path is relative to the root of the site.
       },
     },
     `gatsby-plugin-offline`,
