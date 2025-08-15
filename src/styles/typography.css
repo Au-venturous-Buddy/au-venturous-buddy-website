@@ -47,3 +47,8 @@
     font-family: "Arial Rounded Bold MT";
     src: url("../fonts/ArialRoundedBoldMT.woff2");
 }
+
+@font-face {
+    font-family: "Futura Bold";
+    src: url("../fonts/Futura\ Bold.woff2");
+}
