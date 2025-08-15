@@ -23,7 +23,7 @@ const Header = () => (
             textDecoration: `none`
           }}
         >
-          <StaticImage src="../images/AUVB Header Logo.png" alt='Au-venturous Buddy Logo' layout="fullWidth"></StaticImage>
+          <StaticImage src="../images/AUVB Header Logo v2.png" alt='Au-venturous Buddy Logo' layout="fullWidth"></StaticImage>
         </Link>
         </ResponsiveHeader>
       </div>
