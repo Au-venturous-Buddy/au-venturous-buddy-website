@@ -306,7 +306,7 @@
   .questionnaires-list-item .btn:hover,
   .questionnaires-list-item .btn:focus {
     background-image: url("../images/BlackLeatherBackground.png");
-    background-color: $primaryColor;
+    background-color: rgb(44, 56, 140);
     background-size: cover;
     background-position: center;
     padding-top: 0px;
@@ -323,12 +323,12 @@
     .questionnaire-preview {
       font-family: Arial, Helvetica, sans-serif;
       background: white;
-      color: $primaryColor;
+      color: rgb(44, 56, 140);
       border-top: 20px solid #D9D9D9;
       height: 100%;
       width: 100%;
       margin: 0;
-      box-shadow: $shadowCenter;
+      box-shadow: rgb(44, 56, 140);
 
       .questionnaire-preview-title {
         position: relative;
@@ -358,7 +358,7 @@
     background-color: white;
     box-shadow: $shadowImg;
     padding: 0.5in;
-    color: $primaryColor;
+    color: rgb(44, 56, 140);
     text-align: justify;
     min-width: 3in;
   }
