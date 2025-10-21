@@ -1,6 +1,7 @@
 import React, {useState} from "react"
 import {Modal, Button, OverlayTrigger, Tooltip} from 'react-bootstrap'
 import { GiHamburgerMenu } from "react-icons/gi";
+import { BsCardChecklist } from "react-icons/bs";
 import CloseButton from "./close-button";
 import ResponsiveHeader from "./responsive-header";
 import {ImageList, ImageListItem} from '@mui/material';
@@ -108,6 +109,11 @@ export default function MenuWindow({ pageID }) {
           "logo": (<ImFilm />),
           "text": "Explore",
           "to": "/explore/"
+        },
+        "asdscreen": {
+          "logo": (<BsCardChecklist />),
+          "text": "ASDScreen",
+          "to": "/asdscreen/"
         }
       }
     
