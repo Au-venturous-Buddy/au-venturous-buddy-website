@@ -353,4 +353,13 @@
   border-bottom: 3px solid gray;
   box-shadow: $shadowCenter;
   overflow-x: scroll;
+
+  .hero-section {
+    background-color: white;
+    box-shadow: $shadowImg;
+    padding: 0.5in;
+    color: $primaryColor;
+    text-align: justify;
+    min-width: 3in;
+  }
 }
