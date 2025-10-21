@@ -18,7 +18,7 @@ export default function HomePage() {
     var questionnaireItemData = questionnaireData.allFile.edges[i].node.childMarkdownRemark;
 
     var displayBookCover = (
-      <QuestionnaireCover title={questionnaireItemData.frontmatter.title} slug={questionnaireItemData.fields.slug} />
+      <QuestionnaireCover title={questionnaireItemData.frontmatter.title} slug={questionnaireItemData.frontmatter.url} />
     )
 
     questionnaireItems.push(displayBookCover)
