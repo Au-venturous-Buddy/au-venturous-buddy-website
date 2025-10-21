@@ -8,6 +8,7 @@ import {BsTrashFill} from "react-icons/bs";
 import {Button} from "react-bootstrap";
 import ShowAudio from "../components/show-audio";
 import ResponsiveSize from "../hooks/responsive-size";
+import MenuWindow from "../components/menu-window";
 
 export default function HomePage() {
   const questionnaireData = GetQuestionnaires()
