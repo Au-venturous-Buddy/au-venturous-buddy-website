@@ -30,7 +30,7 @@ export default function HomePage() {
   return(
     <Layout menuBarItems={[(<MenuWindow pageID="asdscreen" />)]} showMenuBar={true}>
       <SEO title="ASD Screen App Home" description="ASD Screen App Home Page" />
-      <section className="pt-3 mt-3 mb-5 main-background" style={{textAlign: "center", paddingBottom: "1in"}}>
+      <section className="pt-3 mt-3 mb-5 asdscreen-background" style={{textAlign: "center", paddingBottom: "1in"}}>
         <section className="mx-3 hero-section">
           <div
             style={{
