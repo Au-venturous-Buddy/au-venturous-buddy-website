@@ -617,3 +617,37 @@ li .btn:focus {
   border-radius: 50%;
   border: 10px solid #00F;
 }
+
+.show-audio-button,
+.show-audio-button:hover,
+.show-audio-button:focus {
+  border: 2px solid $primaryColor; 
+  border-radius: 0px; 
+}
+
+.show-audio-button:hover,
+.show-audio-button:focus {
+  box-shadow: $shadowImg;
+}
+
+.audio-player {
+  box-shadow: $shadowCenter;
+  height: 315px;
+  width: 240px;
+  background-color: #9ACD32;
+  padding: 10px;
+
+  .popover-arrow {
+    display: none;
+  }
+
+  .popover-body {
+    overflow-x: scroll;
+    background: #DBDBDB;
+
+    iframe {
+      height: 140px;
+      width: 550px;
+    }
+  }
+}
