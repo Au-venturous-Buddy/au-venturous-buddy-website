@@ -54,6 +54,7 @@ export default function HomePage() {
             <article className="mb-2">{`Maligayang pagdating mula sa Autism Spectrum Disorder (ASD) Screening website kung saan maaaring sumagot ng dalawang autism-specific screening tools bilang parte ng routine developmental screening ng iyong anak para malaman kung siya ay nagpapakita ng senyales ng ASD. Ang resulta ng kahit anong karagdagang pagsusuri ay hindi papalit sa isang developmental assessment na ginagawa ng isang developmental and behavioral pediatrician.`}</article>
             <ShowAudio audioLink="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1405661788%3Fsecret_token%3Ds-4ocYJHnG6gk&color=%23ff5500&auto_play=true&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true" showAudio={true} />
           </section>
+          <small><b>{`© ${new Date().getFullYear()} ACRI`}</b></small>
         </section>
         <ul className="questionnaires-list">
           {questionnaireItems.map((value, index) => (
