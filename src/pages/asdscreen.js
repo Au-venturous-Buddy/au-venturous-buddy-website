@@ -10,6 +10,7 @@ import ShowAudio from "../components/show-audio";
 import ResponsiveSize from "../hooks/responsive-size";
 import MenuWindow from "../components/menu-window";
 import ResponsiveHeader from "../components/responsive-header";
+import { StaticImage } from "gatsby-plugin-image"
 
 export default function HomePage() {
   const questionnaireData = GetQuestionnaires()
