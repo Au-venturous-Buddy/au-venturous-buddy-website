@@ -344,3 +344,13 @@
     box-shadow: $shadowCenter;
   }
 }
+
+.main-background {
+  background: #DBDBDB;
+  background-size: 90%;
+  background-position: center;
+  border-top: 3px solid gray;
+  border-bottom: 3px solid gray;
+  box-shadow: $shadowCenter;
+  overflow-x: scroll;
+}
