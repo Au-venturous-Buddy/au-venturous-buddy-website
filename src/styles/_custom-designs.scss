@@ -296,3 +296,51 @@
     font-family: "Felt Tip Roman Bold", "Felt Tip Roman Regular", "Futura Bold", "Segoe UI", Arial, Helvetica, sans-serif;
   }
 }
+
+.questionnaires-list {
+  margin: 0px !important;
+  padding: 0px !important;
+  justify-content: center;
+
+  .questionnaires-list-item .btn,
+  .questionnaires-list-item .btn:hover,
+  .questionnaires-list-item .btn:focus {
+    background-image: url("../images/BlackLeatherBackground.png");
+    background-color: $primaryColor;
+    background-size: cover;
+    background-position: center;
+    padding-top: 0px;
+    padding-bottom: 40px;
+    padding-right: 10px;
+    padding-left: 10px;
+    border: none;
+    height: 4in;
+    width: 3in;
+    line-height: 100%;
+    border-radius: 3px;
+    justify-content: center;
+
+    .questionnaire-preview {
+      font-family: Arial, Helvetica, sans-serif;
+      background: white;
+      color: $primaryColor;
+      border-top: 20px solid #D9D9D9;
+      height: 100%;
+      width: 100%;
+      margin: 0;
+      box-shadow: $shadowCenter;
+
+      .questionnaire-preview-title {
+        position: relative;
+        top: 50%;
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+      }
+    }
+  }
+
+  .questionnaires-list-item .btn:hover,
+  .questionnaires-list-item .btn:focus {
+    box-shadow: $shadowCenter;
+  }
+}
