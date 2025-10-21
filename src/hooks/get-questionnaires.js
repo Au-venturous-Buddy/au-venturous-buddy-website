@@ -16,9 +16,7 @@ export const GetQuestionnaires = () => {
                 childMarkdownRemark {
                   frontmatter {
                     title
-                  }
-                  fields {
-                    slug
+                    url
                   }
                 }
               }
