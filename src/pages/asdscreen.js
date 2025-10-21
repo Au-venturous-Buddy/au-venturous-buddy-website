@@ -9,6 +9,7 @@ import {Button} from "react-bootstrap";
 import ShowAudio from "../components/show-audio";
 import ResponsiveSize from "../hooks/responsive-size";
 import MenuWindow from "../components/menu-window";
+import ResponsiveHeader from "../components/responsive-header";
 
 export default function HomePage() {
   const questionnaireData = GetQuestionnaires()
