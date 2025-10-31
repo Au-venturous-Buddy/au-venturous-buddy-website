@@ -1,6 +1,6 @@
 import React, {useState} from "react"
 import {Modal, Button, OverlayTrigger, Tooltip} from 'react-bootstrap'
-import { GiHamburgerMenu } from "react-icons/gi";
+import { GiHamburgerMenu, GiThreeFriends } from "react-icons/gi";
 import { BsCardChecklist } from "react-icons/bs";
 import CloseButton from "./close-button";
 import ResponsiveHeader from "./responsive-header";
@@ -114,6 +114,11 @@ export default function MenuWindow({ pageID }) {
           "logo": (<BsCardChecklist />),
           "text": "ASDScreen",
           "to": "/asdscreen/"
+        }
+        "jumpstart": {
+          "logo": (<GiThreeFriends />),
+          "text": "AUVBxBBP Jumpstart!",
+          "to": "/jumpstart/"
         }
       }
     
