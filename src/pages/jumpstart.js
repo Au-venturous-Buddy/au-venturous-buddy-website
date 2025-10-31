@@ -22,7 +22,7 @@ export default function HomePage() {
           >
             <div style={{ margin: 0 }}>
               <ResponsiveHeader level={1} maxSize={2} minScreenSize={800}>
-                <StaticImage src="../images/October2025.jpg" alt='AUVBxBBP Jumpstart Logo' layout="fullWidth"></StaticImage>
+                <StaticImage src="../images/AUVBxBBPJmpstart.jpg" alt='AUVBxBBP Jumpstart Logo' layout="fullWidth"></StaticImage>
               </ResponsiveHeader>
             </div>
           </div>
