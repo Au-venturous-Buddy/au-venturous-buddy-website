@@ -22,10 +22,15 @@ export default function HomePage() {
           >
             <div style={{ margin: 0 }}>
               <ResponsiveHeader level={1} maxSize={2} minScreenSize={800}>
-                <StaticImage src="../images/AUVBxBBPJmpstart.jpg" alt='AUVBxBBP Jumpstart Logo' layout="fullWidth"></StaticImage>
+                <div className="image-border">
+                  <StaticImage src="../images/AUVBxBBPJmpstart.jpg" alt='AUVBxBBP Jumpstart Logo' layout="fullWidth"></StaticImage>
+                </div>
               </ResponsiveHeader>
             </div>
           </div>
+        </section>
+        <section className="mx-3">
+            <iframe width="420" height="315" src="https://www.youtube.com/embed/UdgvdcIeaiA"></iframe>
         </section>
       </section>
     </Layout>
