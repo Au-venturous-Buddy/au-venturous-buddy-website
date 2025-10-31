@@ -29,17 +29,17 @@ export default function HomePage() {
             </div>
           </div>
         </section>
-        <section className="mx-3">
-            <div className="tablet-display-blue">
+        <section>
+            <div className="mx-3 tablet-display-blue">
               <div className="tablet-display-body">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/UdgvdcIeaiA"></iframe>
+                <iframe src="https://www.youtube.com/embed/UdgvdcIeaiA"></iframe>
               </div>
             </div>
         </section>
-        <section className="mx-3">
-            <div className="tablet-display-pink">
+        <section>
+            <div className="mx-3 tablet-display-pink">
               <div className="tablet-display-body">
-                <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSelDYy3ULEXE6bP18MmknDVjyUQ5tHnoYlp-YKebUIQtwwIvA/viewform?embedded=true" width="640" height="7006" frameborder="0" marginheight="0" marginwidth="0"></iframe>
+                <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSelDYy3ULEXE6bP18MmknDVjyUQ5tHnoYlp-YKebUIQtwwIvA/viewform?embedded=true"></iframe>
               </div>
             </div>
         </section>
