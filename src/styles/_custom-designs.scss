@@ -378,6 +378,7 @@
     border: 5px solid #0A72CB;
     border-radius: 30px;
     background-color: #82BCE2;
+    box-shadow: $shadow;
     .tablet-display-body {
       border: 25px solid #82BCE2;
       border-radius: 35px;
@@ -398,6 +399,7 @@
     border: 5px solid rgb(203, 92, 255);
     border-radius: 30px;
     background-color: rgb(215, 116, 255);
+    box-shadow: $shadow;
     .tablet-display-body {
       border: 25px solid rgb(215, 116, 255);
       border-radius: 35px;
