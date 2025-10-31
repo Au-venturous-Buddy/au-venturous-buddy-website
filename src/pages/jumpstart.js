@@ -10,7 +10,7 @@ export default function HomePage() {
   return(
     <Layout menuBarItems={[(<MenuWindow pageID="jumpstart" />)]} showMenuBar={true}>
       <SEO title="AUVBxBBP Jumpstart Program Page" description="AUVBxBBP Jumpstart Program Page" />
-      <section className="pt-3 mt-3 mb-5" style={{textAlign: "center", paddingBottom: "1in"}}>
+      <section className="pt-3 mt-3 mb-5 auvb-bbp-jumpstart-main-page" style={{textAlign: "center", paddingBottom: "1in"}}>
         <section className="mx-3 hero-section">
           <div
             style={{
