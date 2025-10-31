@@ -380,9 +380,14 @@
     .tablet-display-body {
       border: 25px solid #82BCE2;
       border-radius: 5px;
-      iframe:hover,
-      iframe:focus {
-        box-shadow: none;
+      .tablet-display-screen {
+        border: 5px solid #0A72CB;
+        border-radius: 10px;
+        background-color: black;
+        iframe:hover,
+        iframe:focus {
+          box-shadow: none;
+        }
       }
     }
   }
@@ -393,9 +398,14 @@
     .tablet-display-body {
       border: 25px solid rgb(215, 116, 255);
       border-radius: 5px;
-      iframe:hover,
-      iframe:focus {
-        box-shadow: none;
+      .tablet-display-screen {
+        border: 5px solid rgb(203, 92, 255);
+        border-radius: 10px;
+        background-color: black;
+        iframe:hover,
+        iframe:focus {
+          box-shadow: none;
+        }
       }
     }
   }
