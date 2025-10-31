@@ -387,6 +387,12 @@
         border: 5px solid #0A72CB;
         border-radius: 30px;
         background-color: black;
+
+        iframe {
+          margin-top: 30px;
+          margin-bottom: 30px;
+        }
+        
         iframe:hover,
         iframe:focus {
           box-shadow: none;
@@ -410,6 +416,12 @@
         background-image: url("../images/AUVBxBBPJumpstartBG.png");
         background-size: cover;
         background-position: center;
+
+        iframe {
+          margin-top: 30px;
+          margin-bottom: 30px;
+        }
+        
         iframe:hover,
         iframe:focus {
           box-shadow: none;
