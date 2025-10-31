@@ -373,4 +373,18 @@
   .image-border {
     border: 5px solid #EBEBEB;
   }
+
+  .tablet-display-blue {
+    border: 5px solid #0A72CB;
+    .tablet-display-body {
+      border: 25px solid #82BCE2;
+    }
+  }
+
+  .tablet-display-pink {
+    border: 5px solid rgb(203, 92, 255);
+    .tablet-display-body {
+      border: 25px solid rgb(215, 116, 255);
+    }
+  }
 }
