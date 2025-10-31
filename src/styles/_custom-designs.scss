@@ -379,7 +379,7 @@
     border-radius: 30px;
     .tablet-display-body {
       border: 25px solid #82BCE2;
-      border-radius: 15px;
+      border-radius: 10px;
       background-color: #82BCE2;
       .tablet-display-screen {
         border: 5px solid #0A72CB;
@@ -398,12 +398,14 @@
     border-radius: 30px;
     .tablet-display-body {
       border: 25px solid rgb(215, 116, 255);
-      border-radius: 15px;
+      border-radius: 10px;
       background-color: rgb(215, 116, 255);
       .tablet-display-screen {
         border: 5px solid rgb(203, 92, 255);
         border-radius: 30px;
-        background: url("../images/AUVBxBBPJumpstartBG.png") cover;
+        background-image: url("../images/AUVBxBBPJumpstartBG.png");
+        background-size: cover;
+        background-position: center;
         iframe:hover,
         iframe:focus {
           box-shadow: none;
