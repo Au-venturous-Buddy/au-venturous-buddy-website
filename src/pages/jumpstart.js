@@ -32,14 +32,18 @@ export default function HomePage() {
         <section>
             <div className="m-3 tablet-display-blue">
               <div className="tablet-display-body">
-                <iframe width="100%" height="840" src="https://www.youtube.com/embed/UdgvdcIeaiA"></iframe>
+                <div className="tablet-display-screen">
+                  <iframe width="100%" height="840" src="https://www.youtube.com/embed/UdgvdcIeaiA"></iframe>
+                </div>
               </div>
             </div>
         </section>
         <section>
             <div className="m-3 tablet-display-pink">
               <div className="tablet-display-body">
-                <iframe width="100%" height="840" src="https://docs.google.com/forms/d/e/1FAIpQLSelDYy3ULEXE6bP18MmknDVjyUQ5tHnoYlp-YKebUIQtwwIvA/viewform?embedded=true"></iframe>
+                <div className="tablet-display-screen">
+                  <iframe width="100%" height="840" src="https://docs.google.com/forms/d/e/1FAIpQLSelDYy3ULEXE6bP18MmknDVjyUQ5tHnoYlp-YKebUIQtwwIvA/viewform?embedded=true"></iframe>
+                </div>
               </div>
             </div>
         </section>
