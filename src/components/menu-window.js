@@ -114,7 +114,7 @@ export default function MenuWindow({ pageID }) {
           "logo": (<BsCardChecklist />),
           "text": "ASDScreen",
           "to": "/asdscreen/"
-        }
+        },
         "jumpstart": {
           "logo": (<GiThreeFriends />),
           "text": "AUVBxBBP Jumpstart!",
