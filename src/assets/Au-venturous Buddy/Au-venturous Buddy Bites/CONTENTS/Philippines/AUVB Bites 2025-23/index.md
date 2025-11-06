@@ -1,10 +1,10 @@
 ---
 hierarchy: "content"
-name: "Tsurumaru Udon X Tempura (Gateway Mall)"
-date: "2025-11-05"
-url: "https://youtube.com/shorts/2aUFdKzu244"
+name: "Cawayan Cafe"
+date: "2025-11-04"
+url: "https://youtube.com/shorts/UzAf9X0E47Y"
 ---
 
-This time on Au-venturous Buddy Bites, we'll be eating at Tsurumaru Udon X Tempura, which originated from Osaka!
+While waiting for your car to be washed and cleaned at the Cawayan Auto Clean, the good news is that you can chill out at Cawayan Cafe!
 
 Live an Au-venturous Life, buddies, and God bless!
