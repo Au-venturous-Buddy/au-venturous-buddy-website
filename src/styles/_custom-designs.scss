@@ -370,8 +370,11 @@
   border-bottom: 10px solid #9542ff;
   background: #a25aff;
 
-  .image-border {
+  .hero-section {
     border: 5px solid #EBEBEB;
+    background: url("../images/WhitePaperBackground.png"), white;
+    background-size: 90%;
+    background-position: center;
   }
 
   .tablet-display-blue {
