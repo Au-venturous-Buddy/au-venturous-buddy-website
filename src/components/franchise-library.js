@@ -38,7 +38,7 @@ export default function FranchiseLibrary(props) {
 
     franchiseTitlesRender[franchiseTitle["type"]].push(
       <div>
-        <TitlePreviewButton titleCode={value.toLowerCase().replaceAll(" ", "-")} titleName={franchiseTitle["name"]} titleType={franchiseTitle["type"]} titleSlug={franchiseTitle["slug"]} titleCover={franchiseTitle["cover"]} />
+        <TitlePreviewButton titleCode={value.toLowerCase().replaceAll(/[^\w]/gi, "-")} titleName={franchiseTitle["name"]} titleType={franchiseTitle["type"]} titleSlug={franchiseTitle["slug"]} titleCover={franchiseTitle["cover"]} />
       </div>
     )
   })
