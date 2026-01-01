@@ -54,7 +54,7 @@ export default function TitleTemplate(props) {
   }
 
   return(
-    <TitleLibrary pageID="explore" type={titleType} franchiseSlug={franchiseSlug} titleCode={titleCode.toLowerCase().replaceAll(" ", "-")} title={titleName} description={titleName} contents={contents} />
+    <TitleLibrary pageID="explore" type={titleType} franchiseSlug={franchiseSlug} titleCode={titleCode.toLowerCase().replaceAll(/[^\w]/gi, "-")} title={titleName} description={titleName} contents={contents} />
   )
 }
 
