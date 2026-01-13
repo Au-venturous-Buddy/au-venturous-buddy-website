@@ -1,0 +1,653 @@
+@import "./typography.css";
+
+@mixin pillColor($background_color) {
+  background: $background_color;
+  border: none;
+}
+
+.hero-caption {
+  background: #B88500;
+  color: #FFFFFF;
+  padding: 3%;
+  text-align: center;
+}
+
+.hero-image {
+  margin: 0 auto;
+  max-width: 360;
+}
+
+div.main {
+  min-height: 100vh;
+  padding-bottom: 60px;
+}
+
+div.full-height {
+  min-height: 100vh;
+}
+
+.footer-col {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    box-shadow: $shadowCenter;
+    footer {
+      display: flex;
+      position: relative;
+      bottom: 0;
+      height: 30px;
+      clear: both;
+      background-color: gray;
+      color: white;
+      justify-content: center;
+      width: 100%;
+  
+      span {
+        align-self: center;
+        text-align: center;
+      }
+    }
+}
+
+.bottom-row {
+  bottom: 0;
+  position: "fixed"; 
+  width: 100%;
+}
+
+.shadow,
+.hover-shadow:hover {
+  box-shadow: $shadow;
+}
+
+.hover-shadow-card:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.ext-web-link,
+.ext-web-link:visited,
+article a,
+article a:visited {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.ext-web-link:hover,
+article a:hover {
+  color: #fff;
+  text-decoration: none;
+  background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.3), rgba(135, 135, 135, 0.3)), #A35BFF;
+  box-shadow: $shadow;
+  padding: 2px 10px;
+  border-radius: 10px;
+  font-weight: bold;
+}
+
+body {
+  font-family: "Futura Bold", "Segoe UI", Arial, Helvetica, sans-serif;
+  color: #fff;
+  background-size: 20%;
+
+  .floor-background {
+    background-image: url("../images/WhitePaperBackground.png");
+  }
+  .wall-background {
+    background-image: url("../images/WhitePaperBackground.png");
+  }
+}
+
+main, .modal {
+  text-align: center;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  text-align: center;
+}
+
+.underline-text {
+  text-decoration: underline;
+}
+
+.accordion-item {
+  border: none;
+}
+
+.accordion-button,
+.accordion-button:not(.collapsed) {
+  background: $primaryColor;
+  border: none;
+  color: #fff;
+  display: block;
+}
+
+.accordion-button::after {
+  display: none;
+}
+
+.flex-center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.form-control {
+  border: none;
+}
+
+.btn,
+.btn:hover,
+.btn:focus {
+  @include pillColor($primaryColor);
+  color: white;
+  --bs-btn-active-color: white;
+}
+
+.btn:hover {
+  box-shadow: $shadow;
+  background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.3), rgba(135, 135, 135, 0.3)), $primaryColor;
+}
+
+.btn:disabled {
+  @include pillColor((linear-gradient(to right bottom, rgba(255, 255, 255, 0.3), rgba(135, 135, 135, 0.3)), $secondaryColor));
+  color: white;
+}
+
+.btn.secondary-color,
+.btn.secondary-color:hover,
+.btn.secondary-color:focus {
+  @include pillColor($secondaryColor);
+  color: white;
+  --bs-btn-active-color: white;
+}
+
+.btn.secondary-color:hover {
+  @include pillColor((linear-gradient(to right bottom, rgba(255, 255, 255, 0.3), rgba(135, 135, 135, 0.3)), $secondaryColor));
+  box-shadow: $shadow;
+}
+
+.profile-button {
+  background: rgba(255, 255, 255, 0);
+  border-radius: 10px;
+  padding: 0;
+
+  .profile-caption {
+    color: $primaryColor;
+  }
+}
+
+.profile-button:hover,
+.profile-button:focus {
+  box-shadow: $shadowCenter;
+
+  .profile-caption {
+    color: white;
+  }
+}
+
+.category-button {
+  background: rgba(255, 255, 255, 0);
+  border-radius: 10px;
+  padding: 0;
+}
+
+.category-button:hover {
+  box-shadow: $shadowCenter;
+  .category-caption {
+    color: white;
+  }
+}
+
+.img-button {
+  background: rgba(255, 255, 255, 0);
+  border-radius: 0px;
+  padding: 0;
+}
+
+.img-button.media-preview .media-preview-title {
+  color: $primaryColor;
+
+  .media-preview-badge {
+    color: #FFFFFF;
+  }
+}
+
+.img-button:hover {
+  background: rgba(255, 255, 255, 0);
+  box-shadow: $shadowImg;
+}
+
+.img-button.media-preview:hover .media-preview-title {
+  color: $primaryColor;
+
+  .media-preview-badge {
+    color: #FFFFFF;
+  }
+}
+
+.media-preview-image {
+  border: 5px solid rgb(221, 221, 221);
+}
+
+.MuiImageList-root {
+  justify-content: center;
+  margin: 0px !important;
+}
+
+.MuiButtonBase-root.MuiIconButton-root {
+  background: $primaryColor;
+  color: #FFFFFF;
+}
+
+.MuiButtonBase-root.MuiIconButton-root:hover {
+  background: $buttonGradient, $primaryColor;
+  color: #FFFFFF;
+  box-shadow: $shadow;
+}
+
+.modal-content {
+  box-shadow: $shadowCenter;
+}
+
+ul, ol {
+  padding: 0px;
+}
+
+ol.instructions-list li {
+  display: list-item;
+  list-style-type: decimal;
+  list-style-position: inside;
+}
+
+ul.bullet-points li {
+  list-style-type: circle;
+  display: list-item;
+  list-style-position: inside;
+}
+
+.badge {
+  background-color: $primaryColor !important;
+}
+
+.view {
+  position: relative;
+  overflow: hidden;
+  cursor: default;
+}
+
+.view .mask {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-attachment: fixed;
+}
+
+.caption-background {
+  background-color: $secondaryColorTransparent;
+  color: white;
+}
+
+.preview-section {
+  background-color: $primaryColor;
+  color: white; 
+  padding-top: 5%;
+  padding-bottom: 5%;
+  text-align: center; 
+  border-radius: 5px;
+}
+
+.preview-section-button, .preview-section-button:hover {
+  background-color: $secondaryColor;
+}
+
+.center-image {
+  text-align: center;
+  justify-content: center;
+}
+
+.modal-header,
+.modal-body,
+.modal-footer {
+  text-align: center;
+  color: $primaryColor;
+}
+
+.radio-button,
+.radio-button:focus,
+.radio-button:hover {
+  border: none;
+  background: rgba(0, 0, 0, 0);
+  color: white;
+}
+
+.offcanvas-bottom {
+  --bs-offcanvas-height: 50vh;
+}
+
+.offcanvas-backdrop {
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.home-credits-page,
+.franchise-list,
+.books-title-main,
+.books-content-main,
+.bonus-title-main,
+.bonus-content-main,
+.quizzes-title-main,
+.quizzes-content-main,
+.stickers-title-main,
+.stickers-content-main {
+  background: rgb(2, 164, 254);
+  border-top: 7px solid rgb(0, 123, 255);
+  border-bottom: 7px solid rgb(0, 123, 255);
+
+  li .franchise-types-list {
+    background: rgb(0, 145, 224);
+    border: 7px solid rgb(0, 123, 255);
+  }
+}
+
+li .btn:hover,
+li .btn:focus { 
+  box-shadow: $shadowCenter;
+}
+  
+.btn.books-preview,
+.btn.books-preview:hover,
+.btn.books-preview:focus {
+  background: rgb(97, 46, 1);
+  border: 5px solid rgb(122, 58, 0);
+  background-size: cover;
+  background-position: center;
+  color: white;
+  margin-left: 20px;
+  margin-right: 20px;
+  height: 100%;
+  line-height: 100%;
+  padding-top: 0%;
+  padding-bottom: 0%;
+  border-radius: 0px;
+
+  .books-preview-contents {
+    padding: 10%;
+    margin-left: 10px;
+    border-left: 5px solid rgb(122, 58, 0);
+    height: 100%;
+
+    .books-preview-image {
+      border: 5px solid rgb(230, 230, 230);
+    }
+  }
+}
+
+.btn.videos-preview,
+.btn.videos-preview:hover,
+.btn.videos-preview:focus {
+  background: black;
+  background-size: cover;
+  background-position: center;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  margin-left: 20px;
+  margin-right: 20px;
+  height: 100%;
+  line-height: 100%;
+  padding-left: 5px;
+
+  .videos-preview-contents {
+    background: white;
+    margin: 5px;
+    padding: 5px;
+    border-radius: 5px;
+    box-shadow: $shadowImg;
+    border-top: 20px solid rgb(0, 115, 255);
+
+    .videos-preview-title {
+      color: $primaryColor;
+    }
+  }
+}
+  
+.btn.bonus-preview,
+.btn.bonus-preview:hover,
+.btn.bonus-preview:focus,
+.btn.quizzes-preview,
+.btn.quizzes-preview:hover,
+.btn.quizzes-preview:focus,
+.btn.stickers-preview,
+.btn.stickers-preview:hover,
+.btn.stickers-preview:focus {
+  background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.3), rgba(135, 135, 135, 0.3)), url("../images/WhitePaperBackground.png"), white;
+  border-left: 7px dashed black;
+  background-size: cover;
+  background-position: center;
+  border-radius: 0;
+  color: $primaryColor;
+  margin-left: 20px;
+  margin-right: 20px;
+  height: 100%;
+  line-height: 100%;
+  box-shadow: none;
+  border-radius: 0;
+
+  .bonus-preview-contents {
+    padding: 5%;
+    height: 100%;
+
+    .bonus-preview-title {
+      color: $primaryColor;
+    }
+
+    .bonus-preview-image {
+      box-shadow: $shadowImg;
+    }
+  }
+}
+
+.books-title-main-body,
+.books-content-main-body {
+  font-family: "Futura Bold", "Segoe UI", Arial, Helvetica, sans-serif;
+  background: url("../images/WhitePaperBackground.png"), white;
+  background-size: 90%;
+  background-position: center;
+  box-shadow: $shadowCenter;
+  border-left: 20px dotted gray;
+  min-height: 8.26in;
+
+  .accordion-item {
+    background: rgba(0, 0, 0, 0);
+  }
+
+  .accordion-button {
+    background-color: $primaryColor;
+    color: white;
+    display: block;
+  }
+
+  .accordion-button::after {
+    display: none;
+  }
+
+  .accordion-header {
+    background: rgba(0, 0, 0, 0);
+  }
+
+  .books-content-preview-image,
+  .books-content-preview-image:hover,
+  .books-content-preview-image:focus {
+    border: 5px solid rgb(221, 221, 221);
+    box-shadow: $shadowImg;
+  }
+
+  .books-content-preview-title,
+  .books-title-main-body-name {
+    color: $primaryColor;
+  }
+
+  .books-content-preview-caption {
+    text-align: justify;
+  }
+}
+
+.videos-title-main-body,
+.videos-content-main-body {
+  border: 20px solid rgb(188, 188, 188);
+  border-radius: 5px;
+  box-shadow: $shadowCenter;
+  background-image: url("../images/WhitePaperBackground.png");
+  background-size: cover;
+  color: $primaryColor;
+  height: 10in;
+  overflow-y: scroll;
+  padding: 3%;
+
+  .accordion-item {
+    background: rgba(0, 0, 0, 0);
+  }
+
+  .accordion-button {
+    background-color: $primaryColor;
+    color: white;
+    display: block;
+  }
+
+  .accordion-button::after {
+    display: none;
+  }
+
+  .accordion-header {
+    background: rgba(0, 0, 0, 0);
+  }
+
+  .videos-content-preview-title {
+    color: $primaryColor
+  }
+
+  .videos-content-preview-caption {
+    text-align: justify;
+
+    a,
+    a:visited {
+      color: $primaryColor;
+      text-decoration: none;
+    }
+
+    a:hover,
+    a:focus {
+      background-color: $primaryColor;
+      color: white;
+      text-decoration: none;
+      border-radius: 20pt;
+    }
+  }
+}
+
+.bonus-title-main-body,
+.bonus-content-main-body {
+  font-family: "Futura Bold", "Segoe UI", Arial, Helvetica, sans-serif;
+  background: url("../images/WhitePaperBackground.png"), white;
+  border-left: 7px dashed black;
+  background-size: 90%;
+  background-position: center;
+  box-shadow: $shadowCenter;
+  min-height: 8.26in;
+
+  .accordion-item {
+    background: rgba(0, 0, 0, 0);
+  }
+
+  .accordion-button {
+    background-color: $primaryColor;
+    color: white;
+    display: block;
+  }
+
+  .accordion-button::after {
+    display: none;
+  }
+
+  .accordion-header {
+    background: rgba(0, 0, 0, 0);
+  }
+
+  .bonus-content-preview-image,
+  .bonus-content-preview-image:hover,
+  .bonus-content-preview-image:focus {
+    border: 5px solid rgb(221, 221, 221);
+    box-shadow: $shadowImg;
+  }
+
+  .bonus-content-preview-title,
+  .bonus-title-main-body-name {
+    color: $primaryColor;
+  }
+
+  .bonus-content-preview-caption {
+    text-align: justify;
+  }
+}
+
+.explore-page {
+  color: $primaryColor
+}
+
+.franchise-cover,
+.franchise-cover:hover,
+.hero-image {
+  border: 5px solid rgb(230, 230, 230);
+}
+
+.kali-profile-image .gatsby-image-wrapper {
+  border-radius: 50%;
+  border: 10px solid $primaryColor;
+}
+
+.show-audio-button,
+.show-audio-button:hover,
+.show-audio-button:focus {
+  border: 2px solid $primaryColor; 
+  border-radius: 0px; 
+}
+
+.show-audio-button:hover,
+.show-audio-button:focus {
+  box-shadow: $shadowImg;
+}
+
+.audio-player {
+  box-shadow: $shadowCenter;
+  height: 315px;
+  width: 240px;
+  background-color: #9ACD32;
+  padding: 10px;
+
+  .popover-arrow {
+    display: none;
+  }
+
+  .popover-body {
+    overflow-x: scroll;
+    background: #DBDBDB;
+
+    iframe {
+      height: 140px;
+      width: 550px;
+    }
+  }
+}

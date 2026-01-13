@@ -1,0 +1,438 @@
+.btn.books-preview-books---sporty-sam,
+.btn.books-preview-books---sporty-sam:hover,
+.btn.books-preview-books---sporty-sam:focus {
+  background: black;
+  background-size: cover;
+  background-position: center;
+  border: 0px;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  margin-left: 20px;
+  margin-right: 20px;
+  height: 100%;
+  line-height: 100%;
+  padding-left: 5px;
+
+  .books-preview-contents {
+    background: rgb(134, 26, 245);
+    margin: 5px;
+    padding: 5px;
+    border-radius: 5px;
+    box-shadow: $shadowImg;
+    border-top: 20px solid red;
+    border-left: 0px;
+
+    .books-preview-title {
+      color: white;
+    }
+
+    .books-preview-image {
+      border: 0px;
+    }
+  }
+}
+
+.books-title-main-body-books---brian-and-naomi,
+.books-content-main-body-books---brian-and-naomi {
+  font-family: "Felt Tip Roman Bold", "Felt Tip Roman Regular", "Futura Bold", "Segoe UI", Arial, Helvetica, sans-serif;
+  background: url("../images/WhitePaperBackground.png"), white;
+  background-size: 90%;
+  background-position: center;
+  box-shadow: $shadowCenter;
+  border-left: 20px dotted gray;
+  min-height: 8.26in;
+  color: #017BFF;
+
+  .accordion-item {
+    background: rgba(0, 0, 0, 0);
+  }
+
+  .accordion-button {
+    background-color: #017BFF;
+    color: white;
+    display: block;
+  }
+
+  .accordion-button::after {
+    display: none;
+  }
+
+  .accordion-header {
+    background: rgba(0, 0, 0, 0);
+  }
+
+  .books-content-preview-image,
+  .books-content-preview-image:hover,
+  .books-content-preview-image:focus,
+  .bonus-content-preview-image,
+  .bonus-content-preview-image:hover,
+  .bonus-content-preview-image:focus {
+    border: 5px solid rgb(221, 221, 221);
+    box-shadow: $shadowImg;
+  }
+
+  .books-content-preview-title,
+  .books-title-main-body-name,
+  .bonus-content-preview-title,
+  .bonus-title-main-body-name {
+    color: #017BFF;
+  }
+
+  .books-content-preview-caption {
+    text-align: justify;
+  }
+
+  .badge {
+    background-color: #017BFF !important;
+  }
+}
+
+.books-title-main-body-books---zene-n-zeanne,
+.books-content-main-body-books---zene-n-zeanne,
+.quizzes-title-main-body-quizzes---zene-n-zeanne,
+.quizzes-content-main-body-quizzes---zene-n-zeanne,
+.stickers-title-main-body-sticker-packs---zene-n-zeanne,
+.stickers-content-main-body-sticker-packs---zene-n-zeanne,
+.books-title-main-body-au-venturous-buddy-gotta-fly--em-all,
+.books-content-main-body-au-venturous-buddy-gotta-fly--em-all {
+  font-family: "Chalkduster", "Futura Bold", "Segoe UI", Arial, Helvetica, sans-serif;
+  color: blue;
+  background: url("../images/Au-Some\ Blogs\ Background.png"), rgb(255, 234, 183);
+  background-size: 90%;
+  background-position: center;
+  box-shadow: $shadowCenter;
+  border-left: 20px dotted gray;
+  min-height: 8.26in;
+
+  .accordion-item {
+    background: rgba(0, 0, 0, 0);
+  }
+
+  .accordion-button {
+    background-color: $primaryColor;
+    background: url("../images/BlueCrayonBackground.png");
+    color: white;
+    display: block;
+  }
+
+  .accordion-button::after {
+    display: none;
+  }
+
+  .accordion-header {
+    background: rgba(0, 0, 0, 0);
+  }
+
+  .books-content-preview-image,
+  .books-content-preview-image:hover,
+  .books-content-preview-image:focus,
+  .bonus-content-preview-image,
+  .bonus-content-preview-image:hover,
+  .bonus-content-preview-image:focus,
+  .quizzes-content-preview-image,
+  .quizzes-content-preview-image:hover,
+  .quizzes-content-preview-image:focus, 
+  .stickers-content-preview-image,
+  .stickers-content-preview-image:hover,
+  .stickers-content-preview-image:focus {
+    border: 0px;
+    box-shadow: none;
+  }
+
+  .hero,
+  .books-content-preview-title,
+  .books-title-main-body-name,
+  .bonus-content-preview-title,
+  .bonus-title-main-body-name,
+  .quizzes-content-preview-title,
+  .quizzes-title-main-body-name, 
+  .stickers-content-preview-title,
+  .stickers-title-main-body-name {
+    color: #00f;
+  }
+
+  .ext-web-link,
+  .ext-web-link:hover {
+    color: blue;
+  }
+
+  .ext-web-link:hover {
+    background: rgba(0, 205, 0, 0.5);
+    border-left: 5px solid rgba(0, 139, 0, 0.7);
+    border-right: 5px solid rgba(0, 139, 0, 0.7);
+    box-shadow: none;
+    border-radius: 0px;
+  }
+
+  .badge {
+    background-color: #A35BFF !important;
+  }
+}
+
+.books-title-main-books---sporty-sam,
+.books-content-main-books---sporty-sam {
+  background: #454545;
+  border-top: 20px solid gray;
+  border-bottom: 20px solid gray;
+  box-shadow: $shadowCenter;
+}
+
+.books-title-main-body-books---sporty-sam,
+.books-content-main-body-books---sporty-sam {
+  font-family: "Krungthep", "Futura Bold", "Segoe UI", Arial, Helvetica, sans-serif;
+  color: rgba(51, 228, 255, 0.8);
+  background: url("../images/SportySamVisorBackgroundSam.png"), #8518f6;
+  background-size: 40%;
+  background-position: center;
+  box-shadow: $shadowCenter;
+  border: 20px solid gray;
+  border-radius: 20%;
+  height: 5in;
+  overflow-y: scroll;
+
+  .books-content-preview-image,
+  .books-content-preview-image:hover,
+  .qr-code {
+    border: 7px solid rgba(51, 228, 255, 0.8);
+    border-radius: 10px;
+  }
+
+  .books-content-preview-title,
+  .books-title-main-body-name {
+    color: rgba(51, 228, 255, 0.8);
+  }
+
+  .accordion-item {
+    background: rgba(0, 0, 0, 0);
+  }
+
+  .accordion-button {
+    background-color: rgba(51, 228, 255, 0.8);
+    color: white;
+    display: block;
+  }
+
+  .accordion-button::after {
+    display: none;
+  }
+
+  .accordion-header {
+    background: rgba(0, 0, 0, 0);
+  }
+
+  .badge {
+    background-color: rgba(51, 228, 255, 0.8) !important;
+  }
+}
+
+.books-title-main-body-kaintayo,
+.books-content-main-body-kaintayo {
+  font-family: "Arial Rounded Bold MT", "Segoe UI", Arial, Helvetica, sans-serif;
+  color: rgb(33, 211, 39);
+
+  .books-content-preview-title,
+  .books-title-main-body-name {
+    color: rgb(33, 211, 39);
+  }
+
+  .accordion-button {
+    background-color: rgb(33, 211, 39);
+    color: rgb(0, 148, 254);
+    display: block;
+  }
+
+  .accordion-button::after {
+    display: none;
+  }
+
+  .accordion-header {
+    background: rgba(0, 0, 0, 0);
+  }
+
+  .badge {
+    background-color: rgb(33, 211, 39) !important;
+    color: rgb(0, 148, 254) !important;
+  }
+}
+
+.videos-title-main-body-zene-and-zeanne-v2-read-along,
+.videos-content-main-body-zene-and-zeanne-v2-read-along {
+  background-image: url("../images/Zene\ N\ Zeanne\ Background.png");
+  color: white;
+
+  .videos-content-preview-title {
+    color: white
+  }
+
+  .videos-content-preview-caption {
+    a,
+    a:visited {
+      color: white;
+      text-decoration: none;
+    }
+
+    a:hover,
+    a:focus {
+      background-color: white;
+      color: $primaryColor;
+      text-decoration: none;
+      border-radius: 20pt;
+    }
+  }
+}
+
+.all-titles-main-quizzes,
+.media-preview-main-quizzes,
+.all-titles-main-sticker-packs,
+.media-preview-main-sticker-packs {
+  font-family: "Futura Bold", "Segoe UI", Arial, Helvetica, sans-serif;
+  border-left: 10px dashed black;
+}
+
+.comic-strip-main-caption-slideshow {
+  font-family: "Felt Tip Roman Bold", "Felt Tip Roman Regular", "Futura Bold", "Segoe UI", Arial, Helvetica, sans-serif;
+
+  .profile-caption {
+    font-family: "Felt Tip Roman Bold", "Felt Tip Roman Regular", "Futura Bold", "Segoe UI", Arial, Helvetica, sans-serif;
+  }
+}
+
+.questionnaires-list {
+  margin: 0px !important;
+  padding: 0px !important;
+  justify-content: center;
+
+  .questionnaires-list-item .btn,
+  .questionnaires-list-item .btn:hover,
+  .questionnaires-list-item .btn:focus {
+    background-image: url("../images/BlackLeatherBackground.png");
+    background-color: rgb(44, 56, 140);
+    background-size: cover;
+    background-position: center;
+    padding-top: 0px;
+    padding-bottom: 40px;
+    padding-right: 10px;
+    padding-left: 10px;
+    border: none;
+    height: 4in;
+    width: 3in;
+    line-height: 100%;
+    border-radius: 3px;
+    justify-content: center;
+
+    .questionnaire-preview {
+      font-family: Arial, Helvetica, sans-serif;
+      background: white;
+      color: rgb(44, 56, 140);
+      border-top: 20px solid #D9D9D9;
+      height: 100%;
+      width: 100%;
+      margin: 0;
+      box-shadow: rgb(44, 56, 140);
+
+      .questionnaire-preview-title {
+        position: relative;
+        top: 50%;
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+      }
+    }
+  }
+
+  .questionnaires-list-item .btn:hover,
+  .questionnaires-list-item .btn:focus {
+    box-shadow: $shadowCenter;
+  }
+}
+
+.asdscreen-background {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #DBDBDB;
+  background-size: 90%;
+  background-position: center;
+  border-top: 3px solid gray;
+  border-bottom: 3px solid gray;
+  box-shadow: $shadowCenter;
+  overflow-x: scroll;
+
+  .hero-section {
+    background-color: white;
+    box-shadow: $shadowImg;
+    padding: 0.5in;
+    color: rgb(44, 56, 140);
+    text-align: justify;
+    min-width: 3in;
+  }
+}
+
+.auvb-bbp-jumpstart-main-page {
+  border-top: 10px solid #9542ff;
+  border-bottom: 10px solid #9542ff;
+  background: #a25aff;
+  color: $primaryColor;
+
+  .hero-section {
+    border: 5px solid #EBEBEB;
+    background: url("../images/WhitePaperBackground.png"), white;
+    background-size: 90%;
+    background-position: center;
+  }
+
+  .tablet-display-blue {
+    border: 5px solid #0A72CB;
+    border-radius: 30px;
+    background-color: #82BCE2;
+    box-shadow: $shadow;
+    .tablet-display-body {
+      border: 25px solid #82BCE2;
+      border-radius: 35px;
+      background-color: #82BCE2;
+      .tablet-display-screen {
+        border: 5px solid #0A72CB;
+        border-radius: 30px;
+        background-color: black;
+
+        iframe {
+          margin-top: 30px;
+          margin-bottom: 30px;
+        }
+        
+        iframe:hover,
+        iframe:focus {
+          box-shadow: none;
+        }
+      }
+    }
+  }
+
+  .tablet-display-pink {
+    border: 5px solid rgb(203, 92, 255);
+    border-radius: 30px;
+    background-color: rgb(215, 116, 255);
+    box-shadow: $shadow;
+    .tablet-display-body {
+      border: 25px solid rgb(215, 116, 255);
+      border-radius: 35px;
+      background-color: rgb(215, 116, 255);
+      .tablet-display-screen {
+        border: 5px solid rgb(203, 92, 255);
+        border-radius: 30px;
+        background-image: url("../images/AUVBxBBPJumpstartBG.png");
+        background-size: cover;
+        background-position: center;
+
+        iframe {
+          margin-top: 30px;
+          margin-bottom: 30px;
+        }
+        
+        iframe:hover,
+        iframe:focus {
+          box-shadow: none;
+        }
+      }
+    }
+  }
+}

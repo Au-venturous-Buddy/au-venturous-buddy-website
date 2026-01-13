@@ -1,0 +1,54 @@
+@font-face {
+    font-family: "Chalkduster";
+    src: url("../fonts/Chalkduster.woff2");
+}
+
+@font-face {
+    font-family: "Krungthep";
+    src: url("../fonts/Krungthep.woff2");
+}
+
+@font-face {
+    font-family: "Felt Tip Roman Regular";
+    src: url("../fonts/FeltTipRomRegular.woff2");
+}
+
+@font-face {
+    font-family: "Felt Tip Roman Bold";
+    src: url("../fonts/FeltTipRomBold.woff2");
+}
+
+@font-face {
+    font-family: "Felt Tip Roman Heavy";
+    src: url("../fonts/FeltTipRomHeavy.woff2");
+}
+
+@font-face {
+    font-family: "Gill Sans Regular";
+    src: url("../fonts/Gill\ Sans.woff2");
+}
+
+@font-face {
+    font-family: "Gill Sans Bold";
+    src: url("../fonts/Gill\ Sans\ Bold.woff2");
+}
+
+@font-face {
+    font-family: "Gill Sans Medium";
+    src: url("../fonts/Gill\ Sans\ Medium.woff2");
+}
+
+@font-face {
+    font-family: "Gill Sans Light";
+    src: url("../fonts/Gill\ Sans\ Light.woff2");
+}
+
+@font-face {
+    font-family: "Arial Rounded Bold MT";
+    src: url("../fonts/ArialRoundedBoldMT.woff2");
+}
+
+@font-face {
+    font-family: "Futura Bold";
+    src: url("../fonts/Futura\ Bold.woff2");
+}
