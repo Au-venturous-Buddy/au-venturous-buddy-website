@@ -31,14 +31,14 @@ export default function HomePage() {
           Through Friendship Chapters where individuals are matched in one to one friendship, students with and without disabilities can grow socially and emotionally by attending group socials and friendship activities within schools and with their buddy.<br/><br/>
           Right now, Best Buddies Philippines has been present in Metro Manila, Rizal, Samar, Leyte, and Cebu. But with more than 7,000 islands, there is definitely more room for expansion, and we need your help!<br/><br/>
           We have developed a form for you to indicate your interest in bringing Best Buddies to your school!<br/><br/>
-          Find out more about this initiative through the video below!
+          Watch the recording of the project presentation here:
           </p>
         </section>
         <section>
             <div className="m-3 tablet-display-blue">
               <div className="tablet-display-body">
                 <div className="tablet-display-screen">
-                  <iframe width="100%" height="840" src="https://www.youtube.com/embed/UdgvdcIeaiA"></iframe>
+                  <iframe width="100%" height="840" src="https://www.youtube.com/embed/BecXDwO7tZ0"></iframe>
                 </div>
               </div>
             </div>
