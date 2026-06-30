@@ -42,7 +42,7 @@ export default function Home() {
               className="mb-4"
             >
               <div style={{ margin: 0 }} className="hero-image">
-                <StaticImage src="../images/May2026.png" alt="May 2026" layout="fullWidth"></StaticImage>
+                <StaticImage src="../images/June2026.png" alt="June 2026" layout="fullWidth"></StaticImage>
               </div>
             </div>
             </ResponsiveHeader>
