@@ -4,6 +4,7 @@ import { StaticImage } from "gatsby-plugin-image"
 import SEO from "../components/seo";
 import ResponsiveHeader from "../components/responsive-header";
 import MenuWindow from "../components/menu-window";
+import AUVBBrowser from "../components/auvb-browser";
 
 export default function Home() {
   return(
@@ -48,6 +49,7 @@ export default function Home() {
             </ResponsiveHeader>
           </div>
         </section>
+        <AUVBBrowser />
       </section>
     </div>
     </Layout>
