@@ -613,8 +613,13 @@ li .btn:focus {
   border: 5px solid rgb(230, 230, 230);
 }
 
-.kali-profile-image .gatsby-image-wrapper {
+.kali-profile-image {
   border: 5px solid rgb(230, 230, 230);
+  background-color: white;
+  
+  .kali-profile-image-inner .gatsby-image-wrapper {
+    border: 5px solid rgb(230, 230, 230);
+  }
 }
 
 .show-audio-button,
