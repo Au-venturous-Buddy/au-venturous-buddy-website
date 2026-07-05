@@ -1,3 +1,88 @@
+.character-profiles-main {
+    font-family: "Chalkduster", "Futura", "Segoe UI", Arial, Helvetica, sans-serif;
+    color: $primaryColor;
+  
+    .accordion-item {
+      background: rgba(0, 0, 0, 0);
+    }
+  
+    .accordion-button {
+      background-color: $primaryColor;
+      background: url("../images/BlueCrayonBackground.png");
+      color: white;
+      display: block;
+    }
+  
+    .accordion-button::after {
+      display: none;
+    }
+  
+    .accordion-header {
+      background: rgba(0, 0, 0, 0);
+    }
+  
+    .media-preview-main-img-au-some-blogs,
+    .media-preview-main-img-au-some-blogs:hover,
+    .media-preview-main-img-au-some-blogs:focus {
+      border: 0px;
+      box-shadow: none;
+    }
+  
+    .ext-web-link,
+    .ext-web-link:hover {
+      color: blue;
+    }
+  
+    .ext-web-link:hover {
+      background: rgba(0, 205, 0, 0.5);
+      border-left: 5px solid rgba(0, 139, 0, 0.7);
+      border-right: 5px solid rgba(0, 139, 0, 0.7);
+      box-shadow: none;
+      border-radius: 0px;
+    }
+
+    .credits-photo-border {
+      border: 5px solid rgb(221, 221, 221); 
+      background-color: white;
+
+      .credits-photo-main {
+        border: 5px solid rgb(221, 221, 221); 
+        background-color: white;
+      }
+    }
+}
+
+.character-profiles {
+  .profile-button,
+  .profile-button:hover {
+    border-radius: 0px;
+    margin: 0;
+    background: white;
+    border: 5px solid rgb(221, 221, 221);
+    font-family: "Chalkduster", "Futura", "Segoe UI", Arial, Helvetica, sans-serif;
+    color: $primaryColor;
+
+    .profile-button-contents {
+      height: 100%;
+      padding: 5%;
+    }
+
+    .profile-caption {
+      color: $primaryColor;
+    }
+
+    .profile-img {
+      border: 5px solid rgb(221, 221, 221);
+      border-radius: 0px;
+    }
+  }
+
+  .profile-button:hover,
+  .profile-button:focus {
+    box-shadow: $shadowImg;
+  }
+}
+
 .btn.books-preview-books---sporty-sam,
 .btn.books-preview-books---sporty-sam:hover,
 .btn.books-preview-books---sporty-sam:focus {
