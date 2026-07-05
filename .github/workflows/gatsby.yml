@@ -35,7 +35,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v6
+        uses: actions/checkout@v7
       - name: Detect package manager
         id: detect-package-manager
         run: |
@@ -82,7 +82,7 @@ jobs:
           PREFIX_PATHS: 'true'
         run: ${{ steps.detect-package-manager.outputs.manager }} run build
       - name: Upload artifact
-        uses: actions/upload-pages-artifact@v6
+        uses: actions/upload-pages-artifact@v5
         with:
           path: ./public
 
@@ -96,5 +96,5 @@ jobs:
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v6
+        uses: actions/deploy-pages@v5
 
