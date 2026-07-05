@@ -668,6 +668,6 @@ li .btn:focus {
   .nav-link.active {
     color: white;
     background: url("../images/AUVBExploreTab.png"), $primaryColor;
-    background-size: contain;
+    background-size: cover;
   }
 }
