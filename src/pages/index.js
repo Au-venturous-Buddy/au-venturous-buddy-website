@@ -23,7 +23,7 @@ export default function Home() {
               className="mb-4"
             >
               <div style={{ margin: 0 }} className="kali-profile-image">
-                <div className="m-2 kali-profile-image-inner">
+                <div className="mx-2 mt-2 mb-4 kali-profile-image-inner">
                   <StaticImage src="../images/KaliProfile.png" alt="Kali Profile Picture" layout="fullWidth"></StaticImage>
                 </div>
               </div>
