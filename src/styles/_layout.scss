@@ -614,8 +614,7 @@ li .btn:focus {
 }
 
 .kali-profile-image .gatsby-image-wrapper {
-  border-radius: 50%;
-  border: 10px solid $primaryColor;
+  border: 5px solid rgb(230, 230, 230);
 }
 
 .show-audio-button,
@@ -663,6 +662,7 @@ li .btn:focus {
   .nav-link:focus,
   .nav-link.active {
     color: white;
+    background-image: url("../images/AUVBExploreTab.png");
     background-color: $primaryColor;
   }
 }
