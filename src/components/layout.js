@@ -43,7 +43,6 @@ export default function Layout({ menuBarItems, children, showMenuBar, useCustomB
       </Container>
       <Container fluid className="px-0 main-navbar" style={{bottom: 0, position: `fixed`, width:`100%`, zIndex:`100`}}>
         <Stack>
-          <HeaderMenuBar show={showMenuBar} menuBarItems={menuBarItems} />
           <div className="footer-col">
             <footer>
               <span style={{fontSize: ResponsiveSize(0.8, "rem", 0.001, 500)}}>
