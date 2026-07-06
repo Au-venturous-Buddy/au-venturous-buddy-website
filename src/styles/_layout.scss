@@ -463,7 +463,8 @@ li .btn:focus {
 }
 
 .books-title-main-body,
-.books-content-main-body {
+.books-content-main-body,
+.explore-page-tab-contents {
   font-family: "Futura Bold", "Segoe UI", Arial, Helvetica, sans-serif;
   background: url("../images/WhitePaperBackground.png"), white;
   background-size: 90%;
@@ -666,20 +667,4 @@ li .btn:focus {
 
 .nav-tabs .nav-link.disabled {
   color: white;
-}
-
-.explore-page {
-  .nav-link {
-    color: v.$primaryColor;
-    border: 3px solid v.$primaryColor;
-    border-radius: 10px;
-  }
-
-  .nav-link:hover,
-  .nav-link:focus,
-  .nav-link.active {
-    color: white;
-    background: url("../images/AUVBExploreTab.png"), rgba(0, 0, 0, 0);
-    background-size: cover;
-  }
 }
