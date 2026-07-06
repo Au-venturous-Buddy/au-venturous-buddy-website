@@ -1,4 +1,5 @@
 @use "variables" as v;
+@use "~bootstrap/scss/bootstrap" as bootstrap;
 
 .carousel-control-prev,
 .carousel-control-next {
@@ -44,7 +45,7 @@
 .carousel-fade {
   .active.carousel-item-left,
   .active.carousel-item-right {
-    @include transition(opacity 1.5s v.$carousel-transition-duration);
+    @include transition(opacity 1.5s bootstrap.$carousel-transition-duration);
   }
 }
 
