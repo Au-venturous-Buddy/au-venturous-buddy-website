@@ -1,14 +1,14 @@
-@import "variables";
+@use "variables";
 
 $theme-colors: (
     "dark": $primaryColor
 );
 
-@import "../../node_modules/react-bootstrap-range-slider/dist/react-bootstrap-range-slider.scss";
-@import "../../node_modules/bootstrap/scss/bootstrap.scss";
+@use "../../node_modules/react-bootstrap-range-slider/dist/react-bootstrap-range-slider.scss";
+@use "../../node_modules/bootstrap/scss/bootstrap.scss";
 
-@import "layout";
-@import "menu-bar";
-@import "slideshow";
-@import "videoPlayer";
-@import "custom-designs";
+@use "layout";
+@use "menu-bar";
+@use "slideshow";
+@use "videoPlayer";
+@use "custom-designs";
