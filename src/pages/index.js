@@ -13,6 +13,23 @@ import {GetAUVBContent} from "../hooks/get-auvb-content"
 import {GetAUVBCovers} from "../hooks/get-auvb-covers"
 
 export default function Home() {
+  const franchisesData = GetAUVBContent()
+  const franchisesCovers = GetAUVBCovers()
+
+  var franchises = {}
+
+  for(var i = 0; i < franchisesData.allFile.edges.length; i++) {
+      var franchiseData = franchisesData.allFile.edges[i].node;
+      var franchiseCover = franchisesCovers.allFile.edges[i].node;
+
+      var franchiseGroup = franchiseData.relativeDirectory.split("/")[franchiseData.relativeDirectory.split("/").length - 2]
+      if(!(franchiseGroup in franchises)) {
+          franchises[franchiseGroup] = []
+      }
+
+      franchises[franchiseGroup].push({"name": franchiseData.childMarkdownRemark.frontmatter.name, "cover": franchiseCover.publicURL, "url": (franchiseData.childMarkdownRemark.frontmatter.url == "") ? ("/au-venturous-buddy-website" + franchiseData.childMarkdownRemark.fields.slug) : franchiseData.childMarkdownRemark.frontmatter.url})
+  }
+  
   return(
     <Layout menuBarItems={[(<MenuWindow pageID="home" />)]} showMenuBar={true}>
     <SEO title="Home" description="Welcome to the Au-venturous Buddy Official Website!" />
