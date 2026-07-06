@@ -1,4 +1,4 @@
-@use "variables";
+@use "./variables";
 
 @mixin pillColor($background_color) {
   background: $background_color;
