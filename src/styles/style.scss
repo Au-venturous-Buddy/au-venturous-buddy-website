@@ -1,7 +1,7 @@
 @use "variables";
 
-@use "../../node_modules/react-bootstrap-range-slider/dist/react-bootstrap-range-slider.scss";
-@use "../../node_modules/bootstrap/scss/bootstrap.scss";
+@use "react-bootstrap-range-slider/dist/react-bootstrap-range-slider.scss";
+@use "~bootstrap/scss/bootstrap";
 
 @use "layout";
 @use "menu-bar";
