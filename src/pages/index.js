@@ -1,5 +1,8 @@
 import React from "react"
 import Layout from "../components/layout"
+import ImageList from '@mui/material/ImageList';
+import ImageListItem from '@mui/material/ImageListItem';
+import { Button } from "react-bootstrap"
 import { StaticImage } from "gatsby-plugin-image"
 import SEO from "../components/seo";
 import ResponsiveHeader from "../components/responsive-header";
@@ -34,7 +37,7 @@ export default function Home() {
         <section className="py-3">
             <Tabs defaultActiveKey="home">
                 <Tab eventKey="home" title="Home">
-                  <section className="py-3 hero">
+                  <section className="py-3 explore-page-tab-contents">
                     <ResponsiveHeader level={1} maxSize={2} minScreenSize={800}>
                       <div
                         style={{
@@ -75,7 +78,7 @@ export default function Home() {
                 {
                     Object.keys(franchises).map((group, index) => (
                         <Tab eventKey={group.toLowerCase().replace(" ", "-")} title={group.split(" ")[group.split(" ").length - 1]}>
-                            <section className="py-3 character-profiles-main">
+                            <section className="py-3 explore-page-tab-contents character-profiles-main">
                                 <ImageList cols={3}>
                                     {
                                         franchises[group].map((franchise) => (
