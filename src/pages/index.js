@@ -5,6 +5,12 @@ import SEO from "../components/seo";
 import ResponsiveHeader from "../components/responsive-header";
 import MenuWindow from "../components/menu-window";
 import AUVBBrowser from "../components/auvb-browser";
+import Tab from 'react-bootstrap/Tab';
+import Nav from 'react-bootstrap/Nav';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
+import {GetAUVBContent} from "../hooks/get-auvb-content"
+import {GetAUVBCovers} from "../hooks/get-auvb-covers"
 
 export default function Home() {
   return(
