@@ -1,16 +1,16 @@
 @use "./typography.css";
-@use "./variables";
+@use "variables" as v;
 
 .character-profiles-main {
     font-family: "Chalkduster", "Futura", "Segoe UI", Arial, Helvetica, sans-serif;
-    color: $primaryColor;
+    color: v.$primaryColor;
   
     .accordion-item {
       background: rgba(0, 0, 0, 0);
     }
   
     .accordion-button {
-      background-color: $primaryColor;
+      background-color: v.$primaryColor;
       background: url("../images/BlueCrayonBackground.png");
       color: white;
       display: block;
@@ -63,7 +63,7 @@
     background: white;
     border: 5px solid rgb(221, 221, 221);
     font-family: "Chalkduster", "Futura", "Segoe UI", Arial, Helvetica, sans-serif;
-    color: $primaryColor;
+    color: v.$primaryColor;
 
     .profile-button-contents {
       height: 100%;
@@ -71,7 +71,7 @@
     }
 
     .profile-caption {
-      color: $primaryColor;
+      color: v.$primaryColor;
     }
 
     .profile-img {
@@ -82,7 +82,7 @@
 
   .profile-button:hover,
   .profile-button:focus {
-    box-shadow: $shadowImg;
+    box-shadow: v.$shadowImg;
   }
 }
 
@@ -108,7 +108,7 @@
     margin: 5px;
     padding: 5px;
     border-radius: 5px;
-    box-shadow: $shadowImg;
+    box-shadow: v.$shadowImg;
     border-top: 20px solid red;
     border-left: 0px;
 
@@ -132,7 +132,7 @@
   background: url("../images/WhitePaperBackground.png"), white;
   background-size: 90%;
   background-position: center;
-  box-shadow: $shadowCenter;
+  box-shadow: v.$shadowCenter;
   border-left: 20px dotted gray;
   min-height: 8.26in;
   color: #017BFF;
@@ -162,7 +162,7 @@
   .bonus-content-preview-image:hover,
   .bonus-content-preview-image:focus {
     border: 5px solid rgb(221, 221, 221);
-    box-shadow: $shadowImg;
+    box-shadow: v.$shadowImg;
   }
 
   .books-content-preview-title,
@@ -198,7 +198,7 @@
   background: url("../images/Au-Some\ Blogs\ Background.png"), rgb(255, 234, 183);
   background-size: 90%;
   background-position: center;
-  box-shadow: $shadowCenter;
+  box-shadow: v.$shadowCenter;
   border-left: 20px dotted gray;
   min-height: 8.26in;
 
@@ -207,7 +207,7 @@
   }
 
   .accordion-button {
-    background-color: $primaryColor;
+    background-color: v.$primaryColor;
     background: url("../images/BlueCrayonBackground.png");
     color: white;
     display: block;
@@ -272,7 +272,7 @@
   background: #454545;
   border-top: 20px solid gray;
   border-bottom: 20px solid gray;
-  box-shadow: $shadowCenter;
+  box-shadow: v.$shadowCenter;
 }
 
 .books-title-main-body-sporty-sam-dream-team,
@@ -282,7 +282,7 @@
   background: url("../images/SportySamVisorBackgroundSam.png"), #8518f6;
   background-size: 40%;
   background-position: center;
-  box-shadow: $shadowCenter;
+  box-shadow: v.$shadowCenter;
   border: 20px solid gray;
   border-radius: 20%;
   height: 5in;
@@ -372,7 +372,7 @@
     a:hover,
     a:focus {
       background-color: white;
-      color: $primaryColor;
+      color: v.$primaryColor;
       text-decoration: none;
       border-radius: 20pt;
     }
@@ -439,7 +439,7 @@
 
   .questionnaires-list-item .btn:hover,
   .questionnaires-list-item .btn:focus {
-    box-shadow: $shadowCenter;
+    box-shadow: v.$shadowCenter;
   }
 }
 
@@ -450,12 +450,12 @@
   background-position: center;
   border-top: 3px solid gray;
   border-bottom: 3px solid gray;
-  box-shadow: $shadowCenter;
+  box-shadow: v.$shadowCenter;
   overflow-x: scroll;
 
   .hero-section {
     background-color: white;
-    box-shadow: $shadowImg;
+    box-shadow: v.$shadowImg;
     padding: 0.5in;
     color: rgb(44, 56, 140);
     text-align: justify;
@@ -467,7 +467,7 @@
   border-top: 10px solid #9542ff;
   border-bottom: 10px solid #9542ff;
   background: #a25aff;
-  color: $primaryColor;
+  color: v.$primaryColor;
 
   .hero-section {
     border: 5px solid #EBEBEB;
@@ -480,7 +480,7 @@
     border: 5px solid #0A72CB;
     border-radius: 30px;
     background-color: #82BCE2;
-    box-shadow: $shadow;
+    box-shadow: v.$shadow;
     .tablet-display-body {
       border: 25px solid #82BCE2;
       border-radius: 35px;
@@ -507,7 +507,7 @@
     border: 5px solid rgb(203, 92, 255);
     border-radius: 30px;
     background-color: rgb(215, 116, 255);
-    box-shadow: $shadow;
+    box-shadow: v.$shadow;
     .tablet-display-body {
       border: 25px solid rgb(215, 116, 255);
       border-radius: 35px;
