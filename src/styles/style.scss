@@ -1,4 +1,8 @@
-@use "variables";
+@use "variables" as v;
+
+$theme-colors: (
+    "dark": v.$primaryColor
+);
 
 @use "react-bootstrap-range-slider/dist/react-bootstrap-range-slider.scss";
 @use "~bootstrap/scss/bootstrap";
