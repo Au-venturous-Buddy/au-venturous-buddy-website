@@ -45,7 +45,7 @@
 .carousel-fade {
   .active.carousel-item-left,
   .active.carousel-item-right {
-    @include transition(opacity 1.5s bootstrap.$carousel-transition-duration);
+    @use bootstrap.transition(opacity 1.5s bootstrap.$carousel-transition-duration);
   }
 }
 
