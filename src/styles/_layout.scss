@@ -656,6 +656,16 @@ li .btn:focus {
   }
 }
 
+.nav-tabs .nav-link,
+.nav-tabs .nav-link.disabled {
+  background: white;
+  border: 3px solid gray;
+}
+
+.nav-tabs .nav-link.disabled {
+  color: white;
+}
+
 .explore-page {
   .nav-link {
     color: $primaryColor;
