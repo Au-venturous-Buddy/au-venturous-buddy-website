@@ -1,8 +1,8 @@
-@use "./variables";
+@use "variables" as v;
 
 .carousel-control-prev,
 .carousel-control-next {
-  background-color: $primaryColor;
+  background-color: v.$primaryColor;
   width: 10%;
   opacity: 1;
   margin-top: 5%;
@@ -28,26 +28,26 @@
 }
 
 .carousel-inner:hover {
-  box-shadow: $shadowCenter;
+  box-shadow: v.$shadowCenter;
 }
 
 .carousel-control-prev:hover, 
 .carousel-control-next:hover {
-    box-shadow: $shadow;
-    background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.3), rgba(135, 135, 135, 0.3)), $primaryColor;
+    box-shadow: v.$shadow;
+    background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.3), rgba(135, 135, 135, 0.3)), v.$primaryColor;
 }
 
 .carousel-control-prev:hover {
-    box-shadow: $shadowReverse;
+    box-shadow: v.$shadowReverse;
 }
 
 .carousel-fade {
   .active.carousel-item-left,
   .active.carousel-item-right {
-    @include transition(opacity 1.5s $carousel-transition-duration);
+    @include transition(opacity 1.5s v.$carousel-transition-duration);
   }
 }
 
 .catalog > div > .slick-list > div > .slick-active > div > div {
-  box-shadow: $shadowCenter;
+  box-shadow: v.$shadowCenter;
 }
