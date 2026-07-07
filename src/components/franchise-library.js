@@ -60,7 +60,29 @@ export default function FranchiseLibrary(props) {
           {
             Object.keys(franchiseTitlesRender).map((value) => (
               <Tab eventKey={value} title={value}>
-                <ul className="franchise-list">
+                <ul className="franchise-list character-profiles">
+                  <div
+                    style={{
+                      margin: `0 auto`,
+                      maxWidth: 460,
+                      padding: `1.45rem 1.0875rem`
+                    }}
+                    className="mt-2 profile-button"
+                  >
+                    <ResponsiveHeader level={1} maxSize={2} minScreenSize={800}>
+                      <div aria-hidden={true} className="profile-button-contents">
+                          <img
+                              className="d-block w-100 profile-img"
+                              src={props.cover}
+                              alt={props.title}
+                              aria-hidden={true}
+                          />
+                          <div className="m-2 bold-text profile-caption">
+                            {props.title}
+                          </div>
+                      </div>
+                    </ResponsiveHeader>
+                  </div>
                   <li style={{display: "inline"}}>
                     {
                       franchiseTitlesRender[value].map((item) => (
