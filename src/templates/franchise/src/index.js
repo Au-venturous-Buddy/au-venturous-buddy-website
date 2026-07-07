@@ -25,7 +25,7 @@ export default function FranchiseTemplate(props) {
       }
     }
     else if(nodeItem.ext === ".png") {
-      if(nodeItem.name === "FRANCHISE_COVER") {
+      if(nodeItem.name === "CHARACTER_COVER") {
         franchiseCover = nodeItem.publicURL
       }
       else if(nodeItem.name === "TITLE_COVER") {
@@ -39,7 +39,7 @@ export default function FranchiseTemplate(props) {
   }
 
   return(
-    <FranchiseLibrary pageID="explore" title={franchiseName} description={franchiseName} franchiseTitles={franchiseTitles} />
+    <FranchiseLibrary pageID="explore" title={franchiseName} cover={franchiseCover} description={franchiseName} franchiseTitles={franchiseTitles} />
   )
 }
 
