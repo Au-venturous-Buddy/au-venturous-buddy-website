@@ -26,7 +26,7 @@ function TitlePreviewButton(props) {
               props.titleType === "videos" ? <FaFilm />
               : props.titleType === "books" ? <FaBook />
               : <FaFileLines />
-            }<FaArrowUpRightFromSquare />
+            } <FaArrowUpRightFromSquare />
           </section>
         </div>
       </div>
