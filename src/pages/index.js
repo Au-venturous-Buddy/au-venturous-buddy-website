@@ -10,6 +10,8 @@ import MenuWindow from "../components/menu-window";
 import { Tab, Tabs } from "react-bootstrap";
 import {GetAUVBContent} from "../hooks/get-auvb-content"
 import {GetAUVBCovers} from "../hooks/get-auvb-covers"
+import { FaArrowUpRightFromSquare } from "react-icons/fa6";
+import { IoLibrary } from "react-icons/io5";
 
 export default function Home() {
   const franchisesData = GetAUVBContent()
@@ -92,7 +94,8 @@ export default function Home() {
                                                             aria-hidden={true}
                                                         />
                                                         <div className="m-2 bold-text profile-caption">
-                                                        <ResponsiveHeader level={4} maxSize={0.9} minScreenSize={330}>{franchise["name"]}</ResponsiveHeader>
+                                                          <ResponsiveHeader level={4} maxSize={0.9} minScreenSize={330}>{franchise["name"]}</ResponsiveHeader> <br />
+                                                          <IoLibrary /><FaArrowUpRightFromSquare />
                                                         </div>
                                                     </div>
                                                 </Button>
