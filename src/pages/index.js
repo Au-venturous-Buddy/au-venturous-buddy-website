@@ -95,7 +95,7 @@ export default function Home() {
                                                         />
                                                         <div className="m-2 bold-text profile-caption">
                                                           <ResponsiveHeader level={4} maxSize={0.9} minScreenSize={330}>{franchise["name"]}</ResponsiveHeader> <br />
-                                                          <IoLibrary /><FaArrowUpRightFromSquare />
+                                                          <IoLibrary /> <FaArrowUpRightFromSquare />
                                                         </div>
                                                     </div>
                                                 </Button>
