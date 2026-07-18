@@ -64,12 +64,12 @@ export default function FranchiseLibrary(props) {
                   <div
                     style={{
                       margin: `0 auto`,
-                      maxWidth: 460,
+                      maxWidth: 200,
                       padding: `1.45rem 1.0875rem`
                     }}
                     className="mt-2 profile-button"
                   >
-                    <ResponsiveHeader level={1} maxSize={2} minScreenSize={800}>
+                    <ResponsiveHeader level={1} maxSize={1} minScreenSize={800}>
                       <div aria-hidden={true} className="profile-button-contents">
                           <img
                               className="d-block w-100 profile-img"
