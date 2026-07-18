@@ -6,6 +6,7 @@ import SEO from "./seo";
 import MenuWindow from "./menu-window";
 import UpFolderButton from "./up-folder-button";
 import Slider from "react-slick";
+import { FaFilm, FaArrowUpRightFromSquare, FaBook, FaFileLines } from "react-icons/fa6";
 
 function TitlePreviewButton(props) {
   return(
@@ -20,7 +21,12 @@ function TitlePreviewButton(props) {
           <section className={`m-3 ${props.titleType}-preview-title`}>
             <ResponsiveHeader level={3} maxSize={1} minScreenSize={460}>
               {props.titleName}
-            </ResponsiveHeader>
+            </ResponsiveHeader><br />
+            {
+              props.titleType === "videos" ? <FaFilm />
+              : props.titleType === "books" ? <FaBook />
+              : <FaFileLines />
+            }<FaArrowUpRightFromSquare />
           </section>
         </div>
       </div>
