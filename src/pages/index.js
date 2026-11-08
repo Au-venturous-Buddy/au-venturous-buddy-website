@@ -58,23 +58,6 @@ export default function Home() {
                       Inspiring AU-some Buddy, AU-some Dad, AU-some Mom to have an AU-some AU-venture!
                     </ResponsiveHeader>
                     Welcome to Au-venturous Buddy, a place where Au-venturous buddies can explore and learn new things from fellow Au-venturous buddies!
-                    <div style={{textAlign: `center`, margin: 0}}>
-                      <ResponsiveHeader level={1} maxSize={2} minScreenSize={800}>
-                      What's New?
-                      <div
-                        style={{
-                          margin: `0 auto`,
-                          maxWidth: 860,
-                          padding: `1.45rem 1.0875rem`
-                        }}
-                        className="mb-4"
-                      >
-                        <div style={{ margin: 0 }} className="hero-image">
-                          <StaticImage src="../images/August2026.PNG" alt="August 2026" layout="fullWidth"></StaticImage>
-                        </div>
-                      </div>
-                      </ResponsiveHeader>
-                    </div>
                   </section>
                 </Tab>
                 {
